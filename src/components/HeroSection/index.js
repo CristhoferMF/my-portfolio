@@ -3,7 +3,7 @@ import {HeroContainer,HeroBg,HeroContentWrapper,HeroContent,Title, Subtitle,Line
 function HeroSection() {
     return (
         <>
-            <HeroContainer>
+            <HeroContainer id="home">
                 <HeroBg/>
                 <HeroContent>
                     <HeroContentWrapper>

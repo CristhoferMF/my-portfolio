@@ -1,7 +1,22 @@
-import React,{useState} from 'react'
-import {AccordionSkillsTypeList,
-AccordionSkillsTypeWrapper,AccordionSkillsTypeHeading,SkillsList,SkillWrapper,SkillTitle,SkillProgress,SkillPaintedLine,SkillProcentage} from './AccordionComponents'
+import React, {
+    useState
+} from 'react'
+import {
+    AccordionSkillsTypeList,
+    AccordionSkillsTypeWrapper,
+    SkillsListHeadingWraper,
+    SkillsListHeading,
+    SkillsList,
+    SkillWrapper,
+    SkillTitle,
+    SkillsListIcon,
+    SkillProgress,
+    SkillPaintedLine,
+    SkillProcentage
+} from './AccordionComponents'
 import { dataSkills } from '../Data'
+import { IoArrowDown,IoArrowUp } from "react-icons/io5";
+
 
 function Skill(props){
 
@@ -16,14 +31,19 @@ function Skill(props){
     )
 }
 
-function AccordionSkillsType({skillGroup,setVisible}){
+function AccordionSkillsType({skillGroup,toogle,i,idVisible}){
 
-    const {skills,name,isVisible} = skillGroup;
+    const {skills,name} = skillGroup;
 
     return (
         <AccordionSkillsTypeWrapper>
-            <AccordionSkillsTypeHeading onClick={()=> {setVisible(skillGroup)}}>{name}</AccordionSkillsTypeHeading>
-            <SkillsList isVisible={isVisible}>
+            <SkillsListHeadingWraper onClick={()=> {toogle(i)}}>
+                <SkillsListHeading>{name}</SkillsListHeading>
+                <SkillsListIcon>
+                    {(i === idVisible) ? <IoArrowUp/> : <IoArrowDown/> }
+                </SkillsListIcon>
+            </SkillsListHeadingWraper>
+            <SkillsList isVisible={ (i === idVisible) ? true : false }>
                 {skills.map( (skill) => (
                     <Skill {...skill}/>
                 ))}
@@ -33,24 +53,21 @@ function AccordionSkillsType({skillGroup,setVisible}){
 }
 function Accordion() {
 
-    const [skillsGroup, setSkillsGroup] = useState(dataSkills.skillsGroup);
+    const {skillsGroup} = dataSkills
+    const [idVisible,setIdVisible] = useState(0)
 
-    const setVisible = (skilGroup) => {
-        const indexToVisible = skillsGroup.findIndex((_skilGroup) => _skilGroup === skilGroup);
-        const newSkillsGroup = [...skillsGroup]
+    const toogle = (i) => {
+        if(idVisible === i) {
+            return setIdVisible(null)
+        }
 
-        newSkillsGroup.forEach(skilGroup => {
-            if(skilGroup.isVisible===true) skilGroup.isVisible = false;
-        });
-        
-        newSkillsGroup[indexToVisible].isVisible = true;
-        setSkillsGroup(newSkillsGroup)
+        setIdVisible(i)
     }
 
     return (
         <AccordionSkillsTypeList>
-            {skillsGroup.map( (skillGroup) => (
-                <AccordionSkillsType skillGroup={skillGroup} setVisible={setVisible}/>
+            {skillsGroup.map( (skillGroup,i) => (
+                <AccordionSkillsType skillGroup={skillGroup} toogle={toogle} i={i} idVisible={idVisible}/>
             ) )}
         </AccordionSkillsTypeList>
     )

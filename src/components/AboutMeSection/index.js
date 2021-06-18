@@ -4,8 +4,8 @@ function AboutMeSection() {
     return (
         <>
             <AboutMeContainer id="aboutme">
-                <Rectangle src="/images/rectangle.svg"/>
                 <AboutMeWrapper>
+                    <Rectangle src="/images/rectangle.svg"/>
                     <AboutMeRow>
                         <Column1>
                             <TextWrapper>

@@ -1,16 +1,24 @@
 export const dataSkills = {
-    skills:[
-        {type:'Frontend',elements:[
-            { name:'React JS', porcentage : 90},
-            { name:'Vanila JS', porcentage : 90},
-            { name:'HTML', porcentage : 100},
-            { name:'CSS', porcentage : 80},
-        ]},
-        {type:'Backend',elements:[
-            { name: "PHP", porcentage : 80},
-            { name:'Node JS', porcentage : 50},
-            { name:'Laravel', porcentage : 60}
-        ]}
+    skillsGroup:[
+        {
+            name:'Frontend',
+            skills:[
+                { name:'React JS', percentage : 90},
+                { name:'Vanila JS', percentage : 90},
+                { name:'HTML', percentage : 100},
+                { name:'CSS', percentage : 80},
+            ],
+            isVisible:true
+        },
+        {
+            name:'Backend',
+            skills:[
+            { name: "PHP", percentage : 80},
+            { name:'Node JS', percentage : 50},
+            { name:'Laravel', percentage : 60}
+        ],
+            isVisible:false
+        }
     ],
     image:''
 }

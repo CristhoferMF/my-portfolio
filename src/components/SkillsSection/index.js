@@ -1,5 +1,6 @@
 import React from 'react'
 import {SkillsContainer,SkillsWrapper,SkillsRow,Column1,Image,Column2,ContentWrapper,Heading} from './SkillsComponents'
+import Accordion from './Accordion'
 
 function SkillsSection({skills}) {
     return (
@@ -13,7 +14,7 @@ function SkillsSection({skills}) {
                         <Column2>
                             <ContentWrapper>
                                 <Heading>Skills & Experiencia</Heading>
-                                
+                                <Accordion/>
                             </ContentWrapper>
                         </Column2>
                     </SkillsRow>

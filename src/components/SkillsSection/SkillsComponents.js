@@ -21,6 +21,7 @@ export const Column1 = styled.div`
     flex: 1;
     align-items: center;
     min-height: 600px;
+    max-height: 600px;
 `
 
 export const Image = styled.div`

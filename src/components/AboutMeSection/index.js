@@ -7,7 +7,7 @@ function AboutMeSection() {
         <>
             <AboutMeContainer id="aboutme">
                 <AboutMeWrapper>
-                    <Rectangle src="/images/rectangle.svg"/>
+                    <Rectangle src="./images/rectangle.svg"/>
                     <AboutMeRow>
                         <Column1>
                             <TextWrapper>
@@ -20,7 +20,7 @@ function AboutMeSection() {
                         </Column1>
                         <Column2>
                             <ImageWrapper>
-                                <Image src="/images/person.jpg"/>
+                                <Image src="./images/person.jpg"/>
                             </ImageWrapper>
                         </Column2>
                     </AboutMeRow>

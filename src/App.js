@@ -3,7 +3,10 @@ import HeroSection from './components/HeroSection'
 import FeaturedSection from './components/FeaturedSection'
 import AboutMeSection from './components/AboutMeSection'
 import SkillsSection from './components/SkillsSection'
+import ProjectsSection from './components/ProjectsSection'
 import {dataSkills} from './components/SkillsSection/Data'
+import {dataProjects} from './components/ProjectsSection/Data'
+
 import './App.css'
 
 function App() {
@@ -14,6 +17,7 @@ function App() {
       <FeaturedSection/>
       <AboutMeSection/>
       <SkillsSection {...dataSkills}/>
+      <ProjectsSection {...dataProjects}/>
     </>
   );
 }

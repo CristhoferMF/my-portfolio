@@ -1,5 +1,7 @@
 import React from 'react'
-import {AboutMeContainer,Rectangle,AboutMeWrapper,AboutMeRow,Column1,Column2,TextWrapper,Heading,Phrase,Image,ImageWrapper} from './AboutMeElements'
+import {AboutMeContainer,Rectangle,AboutMeWrapper,AboutMeRow,Column1,Column2,TextWrapper,Phrase,Image,ImageWrapper} from './AboutMeElements'
+import {HeadingSection} from '../HeadingSection'
+
 function AboutMeSection() {
     return (
         <>
@@ -9,7 +11,7 @@ function AboutMeSection() {
                     <AboutMeRow>
                         <Column1>
                             <TextWrapper>
-                                <Heading>Acerca de mi</Heading>
+                                <HeadingSection>Acerca de mi</HeadingSection>
                                 <Phrase>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas urna porta ut vestibulum massa
                                     interdum ac vitae. Elit bibendum tortor, habitasse nec vel purus.<br></br>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas urna porta ut vestibulum massa interdum ac vitae. 

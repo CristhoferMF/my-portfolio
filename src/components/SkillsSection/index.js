@@ -1,8 +1,9 @@
 import React from 'react'
-import {SkillsContainer,SkillsWrapper,SkillsRow,Column1,Image,Column2,ContentWrapper,Heading} from './SkillsComponents'
+import {SkillsContainer,SkillsWrapper,SkillsRow,Column1,Image,Column2,ContentWrapper} from './SkillsComponents'
 import Accordion from './Accordion'
+import {HeadingSection } from '../HeadingSection'
 
-function SkillsSection({skills}) {
+function SkillsSection({skillsGroup}) {
     return (
         <>
             <SkillsContainer>
@@ -13,8 +14,8 @@ function SkillsSection({skills}) {
                         </Column1>
                         <Column2>
                             <ContentWrapper>
-                                <Heading>Skills & Experiencia</Heading>
-                                <Accordion/>
+                                <HeadingSection>Skills & Experiencia</HeadingSection>
+                                <Accordion skillsGroup={skillsGroup}/>
                             </ContentWrapper>
                         </Column2>
                     </SkillsRow>

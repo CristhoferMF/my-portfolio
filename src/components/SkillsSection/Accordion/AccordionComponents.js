@@ -20,6 +20,7 @@ export const SkillsListHeadingWraper = styled.div`
 
 export const SkillsListHeading = styled.h4`
     font-size: ${theme.font.size.h3};
+    color: ${theme.color.black};
     letter-spacing: 0;
     text-transform: uppercase;
     margin: 0;

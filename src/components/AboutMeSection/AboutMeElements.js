@@ -31,11 +31,6 @@ export const TextWrapper = styled.div`
     margin-right: 1rem;
 `
 
-export const Heading = styled.h3`
-    font-size: ${theme.font.size.h3};
-    color: ${theme.color.primary};
-    margin-bottom: 25px;
-`
 export const Phrase = styled.p`
     font-size: ${theme.font.size.base};
     font-weight: 400;

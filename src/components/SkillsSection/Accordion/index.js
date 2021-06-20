@@ -14,7 +14,6 @@ import {
     SkillPaintedLine,
     SkillProcentage
 } from './AccordionComponents'
-import { dataSkills } from '../Data'
 import { IoArrowDown,IoArrowUp } from "react-icons/io5";
 
 
@@ -51,9 +50,8 @@ function AccordionSkillsType({skillGroup,toogle,i,idVisible}){
         </AccordionSkillsTypeWrapper>
     )
 }
-function Accordion() {
+function Accordion({skillsGroup}) {
 
-    const {skillsGroup} = dataSkills
     const [idVisible,setIdVisible] = useState(0)
 
     const toogle = (i) => {

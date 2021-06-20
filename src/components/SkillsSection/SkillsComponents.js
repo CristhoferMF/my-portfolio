@@ -38,8 +38,3 @@ export const Column2 = styled.div`
 export const ContentWrapper = styled.div`
    
 `
-export const Heading = styled.h3`
-    font-size: ${theme.font.size.h3};
-    color: ${theme.color.primary};
-    margin-bottom: 25px;
-`

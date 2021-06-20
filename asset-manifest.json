@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.5d98ace6.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.7859d80b.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.7859d80b.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.02b3ae62.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.02b3ae62.js.map",
+    "static/js/2.79014c23.chunk.js": "/my-portfolio/static/js/2.79014c23.chunk.js",
+    "static/js/2.79014c23.chunk.js.map": "/my-portfolio/static/js/2.79014c23.chunk.js.map",
+    "static/js/3.3ebb0b30.chunk.js": "/my-portfolio/static/js/3.3ebb0b30.chunk.js",
+    "static/js/3.3ebb0b30.chunk.js.map": "/my-portfolio/static/js/3.3ebb0b30.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "static/css/main.5d98ace6.chunk.css.map": "/my-portfolio/static/css/main.5d98ace6.chunk.css.map",
+    "static/js/2.79014c23.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.79014c23.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/my-portfolio/static/media/FuturaPT-Medium.c8b92be0.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02b3ae62.js",
+    "static/js/2.79014c23.chunk.js",
+    "static/css/main.5d98ace6.chunk.css",
+    "static/js/main.7859d80b.chunk.js"
+  ]
+}

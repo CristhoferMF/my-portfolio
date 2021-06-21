@@ -2,21 +2,27 @@ import React from 'react'
 import { HeadingSection } from '../HeadingSection'
 import {
 ProjectsContainer,ProjectsWrapper,ProjectWrapper,ProjectRow,Column1,
-ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,ProjetSlugsWrapper,ProjetSlug
+ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,ProjectTagsWrapper,ProjectTag,LinkSeeMore,LinkSeeMoreWrapper
 } from './ProjectsComponents'
 import { Button } from '../Button'
+import {Link} from 'react-router-dom'
+import { IoArrowForward } from "react-icons/io5";
 
-function ProjectSlugs(){
+
+function ProjectTags({tags}){
+    console.log(tags)
     return (
-            <ProjetSlugsWrapper>
-                <ProjetSlug>Wordpress</ProjetSlug>
-                <ProjetSlug>HTML</ProjetSlug>
-                <ProjetSlug>Javascript</ProjetSlug>
-            </ProjetSlugsWrapper>
+            <ProjectTagsWrapper>
+                {
+                    tags.map( (tag,index) => (
+                        <ProjectTag key={index}>{tag}</ProjectTag>
+                    ))
+                }
+            </ProjectTagsWrapper>
     )
 }
 
-function Project({title,description,imgURL}){
+function Project({title,description,imgURL,id,tags}){
     
     return (
         <>
@@ -25,9 +31,9 @@ function Project({title,description,imgURL}){
                     <Column1>
                         <ProjectTitle>{title}</ProjectTitle>
                         <ProjectDescription>{description}</ProjectDescription>
-                        <ProjectSlugs />
+                        <ProjectTags tags={tags}/>
                         <ButtonWrapper>
-                            <Button>Ver más</Button>
+                            <Link to={"/projects/"+id}><Button>Ver más</Button></Link>
                         </ButtonWrapper>
                     </Column1>
                     <Column2>
@@ -41,7 +47,7 @@ function Project({title,description,imgURL}){
 
 function  ProjectList({projects}){
     return (
-        projects.map( project => (<Project {...project}/>))
+        projects.map( (project,index) => (<Project key={project.id} {...project}/>))
     )
 }
 
@@ -53,6 +59,12 @@ function ProjectsSection({projects}) {
                 <ProjectsWrapper>
                     <HeadingSection textAlign="center">Proyectos</HeadingSection>
                     <ProjectList projects={projects.show(3)}/>
+                    <LinkSeeMoreWrapper>
+                        <LinkSeeMore to="/projects">
+                            Más proyectos
+                            <IoArrowForward/>
+                        </LinkSeeMore>
+                    </LinkSeeMoreWrapper>
                 </ProjectsWrapper>
             </ProjectsContainer>
         </>

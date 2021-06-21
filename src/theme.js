@@ -1,4 +1,4 @@
-export const theme =  {
+export const THEME =  {
     color:{
         primary:'#33C176',
         accent: '#9B31F7',
@@ -15,7 +15,7 @@ export const theme =  {
             h3:'48px'
         }
     },
-    screens: {
+    SCREENS: {
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',

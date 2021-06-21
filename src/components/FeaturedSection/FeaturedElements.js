@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {theme} from '../../theme'
+import {THEME} from '../../theme'
 
 export const FeaturedContainer = styled.div`
     width: 100%;
-    background: ${theme.color.darkGray};
+    background: ${THEME.color.darkGray};
 `
 export const FeaturedContent = styled.div`
     display: flex;
@@ -19,8 +19,8 @@ export const ExperienceWrapper = styled.div`
 
 export const Experience = styled.div`
     font-weight:bold;
-    color: ${theme.color.primary};
-    font-size: ${theme.font.size.h3};
+    color: ${THEME.color.primary};
+    font-size: ${THEME.font.size.h3};
 `
 
 export const PhraseWrapper = styled.div`
@@ -33,5 +33,5 @@ export const Phrase = styled.p`
     font-weight:500;
     font-size:24px;
     text-align: center;
-    color: ${theme.color._white};
+    color: ${THEME.color._white};
 `

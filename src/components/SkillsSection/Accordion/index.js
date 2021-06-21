@@ -43,8 +43,8 @@ function AccordionSkillsType({skillGroup,toogle,i,idVisible}){
                 </SkillsListIcon>
             </SkillsListHeadingWraper>
             <SkillsList isVisible={ (i === idVisible) ? true : false }>
-                {skills.map( (skill) => (
-                    <Skill {...skill}/>
+                {skills.map( (skill,index) => (
+                    <Skill key={index} {...skill}/>
                 ))}
             </SkillsList>
         </AccordionSkillsTypeWrapper>
@@ -65,7 +65,7 @@ function Accordion({skillsGroup}) {
     return (
         <AccordionSkillsTypeList>
             {skillsGroup.map( (skillGroup,i) => (
-                <AccordionSkillsType skillGroup={skillGroup} toogle={toogle} i={i} idVisible={idVisible}/>
+                <AccordionSkillsType key={i} skillGroup={skillGroup} toogle={toogle} i={i} idVisible={idVisible}/>
             ) )}
         </AccordionSkillsTypeList>
     )

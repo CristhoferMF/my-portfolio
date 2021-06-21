@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { theme } from "../theme";
+import { THEME } from "../theme";
 
 export const Button = styled.button`
-    background-color: ${theme.color.accent};
+    background-color: ${THEME.color.accent};
     padding: 1rem 2rem;
     border:none;
-    color:${theme.color._white};
+    color:${THEME.color._white};
     cursor:pointer;
     transition-duration: 0.2s;
     

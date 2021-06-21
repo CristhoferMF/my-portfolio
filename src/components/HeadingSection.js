@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { theme } from "../theme";
+import { THEME } from "../theme";
 
 export const HeadingSection =  styled.h3`
-    font-size: ${theme.font.size.h3};
-    color: ${theme.color.primary};
+    font-size: ${THEME.font.size.h3};
+    color: ${THEME.color.primary};
     letter-spacing: 0.07em;
     margin-bottom: 25px;
     margin-top: 0px;

@@ -6,18 +6,18 @@ import SkillsSection from './components/SkillsSection'
 import ProjectsSection from './components/ProjectsSection'
 import {dataSkills} from './components/SkillsSection/Data'
 import {dataProjects} from './components/ProjectsSection/Data'
-
+import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar/>
       <HeroSection/>
       <FeaturedSection/>
       <AboutMeSection/>
       <SkillsSection {...dataSkills}/>
       <ProjectsSection {...dataProjects}/>
-    </>
+    </Router>
   );
 }
 

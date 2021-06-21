@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from "../../theme";
+import { THEME } from "../../theme";
 
 export const SkillsContainer = styled.div`
     width: 100%;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { theme } from '../../theme'
+import { THEME } from '../../theme'
 
 export const AboutMeContainer = styled.div`
     width: 100%;
@@ -32,9 +32,9 @@ export const TextWrapper = styled.div`
 `
 
 export const Phrase = styled.p`
-    font-size: ${theme.font.size.base};
+    font-size: ${THEME.font.size.base};
     font-weight: 400;
-    color: ${theme.color.black};
+    color: ${THEME.color.black};
 `
 export const Column2 = styled.div`
     flex:1;
@@ -49,5 +49,5 @@ export const ImageWrapper = styled.p`
 
 export const Image = styled.img`
     width: 90%;
-    box-shadow: 20px 20px 0px ${theme.color.accent};
+    box-shadow: 20px 20px 0px ${THEME.color.accent};
 `

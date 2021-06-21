@@ -2,18 +2,19 @@ import React from 'react'
 import { HeadingSection } from '../HeadingSection'
 import {
 ProjectsContainer,ProjectsWrapper,ProjectWrapper,ProjectRow,Column1,
-ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper
+ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,ProjetSlugsWrapper,ProjetSlug
 } from './ProjectsComponents'
 import { Button } from '../Button'
-// function ProjectSlugs(){
-//     return (
-//             <ProjetSlugsWrapper>
-//                 <ProjetSlug>Wordpress</ProjetSlug>
-//                 <ProjetSlug>HTML</ProjetSlug>
-//                 <ProjetSlug>JS</ProjetSlug>
-//             </ProjetSlugsWrapper>
-//     )
-// }
+
+function ProjectSlugs(){
+    return (
+            <ProjetSlugsWrapper>
+                <ProjetSlug>Wordpress</ProjetSlug>
+                <ProjetSlug>HTML</ProjetSlug>
+                <ProjetSlug>Javascript</ProjetSlug>
+            </ProjetSlugsWrapper>
+    )
+}
 
 function Project({title,description,imgURL}){
     
@@ -24,6 +25,7 @@ function Project({title,description,imgURL}){
                     <Column1>
                         <ProjectTitle>{title}</ProjectTitle>
                         <ProjectDescription>{description}</ProjectDescription>
+                        <ProjectSlugs />
                         <ButtonWrapper>
                             <Button>Ver más</Button>
                         </ButtonWrapper>

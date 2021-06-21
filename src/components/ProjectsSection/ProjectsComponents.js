@@ -56,3 +56,17 @@ export const Image = styled.div`
 export const ButtonWrapper = styled.div`
 
 `
+
+export const ProjetSlugsWrapper = styled.div`
+    margin-bottom:20px;
+`
+
+export const ProjetSlug = styled.div`
+    background-color: ${theme.color.lightGray};
+    display: inline-block;
+    padding: 0.5rem 0.7rem;
+    margin-right: 1rem;
+    margin-bottom:10px;
+    font-weight: 300;
+    border-radius: 20px;
+`

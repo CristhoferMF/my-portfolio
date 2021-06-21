@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: FuturaPT;
+  src: url("./fonts/FuturaPT-Book.woff")format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url("./fonts/FuturaPT-Medium.woff")format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url("./fonts/FuturaPT-Bold.woff")format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: FuturaPT;
+  src: url("./fonts/FuturaPT-Demi.woff")format("woff");
+  font-weight: 500;
+}
+
+*{
+  font-family: "FuturaPT";
+  letter-spacing: 0.05em;
+}

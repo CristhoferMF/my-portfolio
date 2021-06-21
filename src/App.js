@@ -7,7 +7,6 @@ import ProjectsSection from './components/ProjectsSection'
 import {dataSkills} from './components/SkillsSection/Data'
 import {dataProjects} from './components/ProjectsSection/Data'
 
-import './App.css'
 
 function App() {
   return (

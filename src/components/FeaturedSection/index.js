@@ -11,7 +11,7 @@ function FeaturedSection() {
                     </ExperienceWrapper>
                     <PhraseWrapper>
                         <Phrase>
-                        ““Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat tortor, gravida ames id urna”
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat tortor, gravida ames id urna”
                         </Phrase>
                     </PhraseWrapper>
                 </FeaturedContent>

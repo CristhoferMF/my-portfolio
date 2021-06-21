@@ -1,13 +1,15 @@
 import React from 'react'
 import {AboutMeContainer,Rectangle,AboutMeWrapper,AboutMeRow,Column1,Column2,TextWrapper,Phrase,Image,ImageWrapper} from './AboutMeElements'
 import {HeadingSection} from '../HeadingSection'
+import imgReactangle from '../../images/rectangle.svg'
+import imgProfile from '../../images/person.jpg'
 
 function AboutMeSection() {
     return (
         <>
             <AboutMeContainer id="aboutme">
                 <AboutMeWrapper>
-                    <Rectangle src="./images/rectangle.svg"/>
+                    <Rectangle src={imgReactangle}/>
                     <AboutMeRow>
                         <Column1>
                             <TextWrapper>
@@ -20,7 +22,7 @@ function AboutMeSection() {
                         </Column1>
                         <Column2>
                             <ImageWrapper>
-                                <Image src="./images/person.jpg"/>
+                                <Image src={imgProfile}/>
                             </ImageWrapper>
                         </Column2>
                     </AboutMeRow>

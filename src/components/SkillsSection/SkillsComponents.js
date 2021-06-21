@@ -27,7 +27,7 @@ export const Column1 = styled.div`
 export const Image = styled.div`
     height: 100%;
     width: 100%;
-    background-image: url('./images/skills_background.jpg');
+    background-image: url(${ props => props.src});
     background-position: center;
 `
 export const Column2 = styled.div`

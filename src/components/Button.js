@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { THEME } from "../theme";
 
-export const Button = styled.button`
+const Button = styled.button`
     background-color: ${THEME.color.accent};
     padding: 1rem 2rem;
     border:none;
@@ -16,3 +16,5 @@ export const Button = styled.button`
         opacity: 0.8;
     }
 `
+
+export default Button;

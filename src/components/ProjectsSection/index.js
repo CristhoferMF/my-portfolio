@@ -1,10 +1,10 @@
 import React from 'react'
-import { HeadingSection } from '../HeadingSection'
+import  HeadingSection from '../HeadingSection'
 import {
 ProjectsContainer,ProjectsWrapper,ProjectWrapper,ProjectRow,Column1,
 ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,ProjectTagsWrapper,ProjectTag,LinkSeeMore,LinkSeeMoreWrapper
 } from './ProjectsComponents'
-import { Button } from '../Button'
+import  Button  from '../Button'
 import {Link} from 'react-router-dom'
 import { IoArrowForward } from "react-icons/io5";
 

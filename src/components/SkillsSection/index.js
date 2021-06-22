@@ -1,7 +1,7 @@
 import React from 'react'
 import {SkillsContainer,SkillsWrapper,SkillsRow,Column1,Image,Column2,ContentWrapper} from './SkillsComponents'
 import Accordion from './Accordion'
-import {HeadingSection } from '../HeadingSection'
+import HeadingSection from '../HeadingSection'
 import imgSkills from '../../images/skills_background.jpg'
 
 function SkillsSection({skillsGroup}) {

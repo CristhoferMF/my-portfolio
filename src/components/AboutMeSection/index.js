@@ -1,6 +1,6 @@
 import React from 'react'
 import {AboutMeContainer,Rectangle,AboutMeWrapper,AboutMeRow,Column1,Column2,TextWrapper,Phrase,Image,ImageWrapper} from './AboutMeElements'
-import {HeadingSection} from '../HeadingSection'
+import HeadingSection from '../HeadingSection'
 import imgReactangle from '../../images/rectangle.svg'
 import imgProfile from '../../images/person.jpg'
 

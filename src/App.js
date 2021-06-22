@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection'
 import {dataSkills} from './components/SkillsSection/Data'
 import {dataProjects} from './components/ProjectsSection/Data'
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
+import ContactSection from './components/ContactSection'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <AboutMeSection/>
       <SkillsSection {...dataSkills}/>
       <ProjectsSection {...dataProjects}/>
+      <ContactSection/>
     </Router>
   );
 }

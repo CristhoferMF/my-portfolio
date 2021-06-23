@@ -5,28 +5,47 @@ export const FeaturedContainer = styled.div`
     width: 100%;
     background: ${THEME.color.darkGray};
 `
-export const FeaturedContent = styled.div`
+export const FeaturedWrapper = styled.div`
     display: flex;
     margin:auto;
     max-width: 700px;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        flex-direction: row;
+    }
 `
 export const ExperienceWrapper = styled.div`
-    padding-right: 1.5rem;
-    padding: 3rem 0;
+        padding: 1rem 0 0 0;
+    
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        padding-right: 1.5rem;
+        padding: 3rem 0;
+    }
 `
 
 export const Experience = styled.div`
     font-weight:bold;
     color: ${THEME.color.primary};
     font-size: ${THEME.font.size.h3};
+    text-align:center;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        text-align: left;
+    }
 `
 
 export const PhraseWrapper = styled.div`
-    padding-left: 1.5rem;
+    
     display:flex;
     align-items: center;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        padding-left: 1.5rem;
+    }
 `
 
 export const Phrase = styled.p`

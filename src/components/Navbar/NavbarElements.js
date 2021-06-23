@@ -3,7 +3,6 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.div`
     height:80px;
-    background: #ffff;
     position: fixed;
     left: 0;
     right: 0;

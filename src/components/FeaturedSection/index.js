@@ -1,11 +1,11 @@
 import React from 'react'
-import {FeaturedContainer,FeaturedContent,ExperienceWrapper,Experience,PhraseWrapper,Phrase} from './FeaturedElements';
+import {FeaturedContainer,FeaturedWrapper,ExperienceWrapper,Experience,PhraseWrapper,Phrase} from './FeaturedElements';
 
 function FeaturedSection() {
     return (
         <>
             <FeaturedContainer>
-                <FeaturedContent>
+                <FeaturedWrapper>
                     <ExperienceWrapper>
                         <Experience>+2<br/>AÑOS</Experience>
                     </ExperienceWrapper>
@@ -14,7 +14,7 @@ function FeaturedSection() {
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat tortor, gravida ames id urna”
                         </Phrase>
                     </PhraseWrapper>
-                </FeaturedContent>
+                </FeaturedWrapper>
             </FeaturedContainer>
         </>
     )

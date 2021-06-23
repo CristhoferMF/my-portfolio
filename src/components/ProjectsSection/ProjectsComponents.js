@@ -3,7 +3,12 @@ import { THEME } from "../../theme";
 import {Link} from 'react-router-dom';
 
 export const ProjectsContainer = styled.div`
-    width: 100%;
+ 
+    padding: 0px 8px;
+
+    @media screen and (min-width : ${THEME.SCREENS["lg"]}){
+        padding: 0;
+    }
 `
 
 export const ProjectsWrapper = styled.div`
@@ -16,6 +21,11 @@ export const ProjectWrapper = styled.div`
 `
 export const ProjectRow = styled.div`
     display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        flex-direction:row;
+    }
 `
 export const Column1 = styled.div`
     flex:1;
@@ -28,8 +38,12 @@ export const Column1 = styled.div`
 export const ProjectTitle = styled.h4`
     font-size: 48px;
     color: ${THEME.color.black};
-    margin: 0;
+    margin-top: 48px;
     margin-bottom: 20px;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        margin-top:0 ;
+    }
 `
 export const ProjectDescription = styled.p`
     font-weight: 300;
@@ -37,21 +51,35 @@ export const ProjectDescription = styled.p`
     margin-top:0;
 `
 export const Column2 = styled.div`
-    width: 480px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right:20px;
+    
+    @media screen and (min-width : ${THEME.SCREENS["md"]}) {
+        width: 400px;
+    }
+    @media screen and (min-width : ${THEME.SCREENS["lg"]}){
+        width: 480px;
+        padding-right:0;
+    }
 `
 
 export const Image = styled.div`
     width: 100%;
-    min-height: 350px;
-    height: 350px;
+    height: 300px;
+
     box-shadow: 20px 20px 0 ${THEME.color.accent};
     overflow: hidden;
     background-image: url(${(props) => props.src});
     background-repeat: no-repeat no-repeat;
     background-position:center center;
+    background-size: cover;
+
+    @media screen and (min-width : ${THEME.SCREENS["lg"]}){
+        height: 350px;
+    }
 `
 
 export const ButtonWrapper = styled.div`

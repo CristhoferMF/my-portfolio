@@ -2,10 +2,17 @@ import styled from "styled-components";
 import { THEME } from "../../theme";
 
 export const SkillsContainer = styled.div`
-    width: 100%;
+    
     display: flex;
     justify-content: center;
+    padding: 0 8px 96px 8px;
     padding-bottom: 96px;
+
+    @media screen and (min-width : ${THEME.SCREENS["lg"]}){
+        padding: 0 0 96px 0;
+
+    }
+
 `
 export const SkillsWrapper = styled.div`
     max-width: 900px;
@@ -17,11 +24,15 @@ export const SkillsRow = styled.div`
     align-items: top;
 `
 export const Column1 = styled.div`
-    display: flex;
-    flex: 1;
-    align-items: center;
-    min-height: 600px;
+    display: none;
+    min-height: 600px;  
     max-height: 600px;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
 `
 
 export const Image = styled.div`
@@ -32,7 +43,10 @@ export const Image = styled.div`
 `
 export const Column2 = styled.div`
     flex:2;
-    padding-left: 50px;
+
+    @media screen and (min-width : ${THEME.SCREENS["md"]}){
+        padding-left: 50px;
+    }
 `
 
 export const ContentWrapper = styled.div`

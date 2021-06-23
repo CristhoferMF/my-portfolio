@@ -9,7 +9,7 @@ function Form() {
                 <FormInput placeholder="Tu nombre"/>
                 <FormInput placeholder="Tu correo electrónico"/>
                 <FormInput placeholder="Asunto"/>
-                <FormTextArea placeholder="Detalles"/>
+                <FormTextArea placeholder="Mensaje"/>
                 <ButtonWrapper>
                     <Button type="submit">Enviar</Button>
                 </ButtonWrapper>

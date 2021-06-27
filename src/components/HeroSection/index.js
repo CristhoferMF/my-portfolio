@@ -12,6 +12,7 @@ function HeroSection() {
                 <HeroContent>
                     <HeroContentWrapper>
                         <Title>Hola, soy<br/>Cristhofer</Title>
+                        <hr/>
                         <Subtitle>Desarollador<br/>Web</Subtitle>
                         <Line src={svgLine}></Line>
                     </HeroContentWrapper>

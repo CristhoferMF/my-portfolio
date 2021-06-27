@@ -26,6 +26,9 @@ export const HeroContainer = styled.div`
     }
 `
 export const HeroBg = styled.div`
+    /* 1version*/
+    display: none;
+    /* end--1version*/
     width: 100%;
     height: 100%;
     position: absolute;
@@ -50,7 +53,11 @@ export const HeroBg = styled.div`
 export const HeroContent = styled.div`
     height:100%;
     display: flex;
+    /* 1version
     justify-content: flex-start;
+    */
+    justify-content:center;
+    /* end--1version*/
     align-items: center;
     z-index: 1;
 `
@@ -58,9 +65,12 @@ export const HeroContent = styled.div`
 export const HeroContentWrapper  = styled.div`
     display: flex;
     flex-direction: column;
+      /* 1version*/
+      text-align: center;
+    /** */
 `
 export const Title = styled.h1`
-    
+  
     font-weight:bold;
     margin:0 0;
     font-size: 4rem;
@@ -112,7 +122,9 @@ export const Line = styled.img`
     position: absolute;
    
     @media screen and (min-width : ${THEME.SCREENS["xl"]}) {
+        /* 1v 
         display: block;
+        */
     }
     @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
         width: 10px;

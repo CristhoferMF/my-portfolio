@@ -1,5 +1,5 @@
 import React from 'react'
-import {FeaturedContainer,FeaturedWrapper,ExperienceWrapper,Experience,PhraseWrapper,Phrase} from './FeaturedElements';
+import {FeaturedContainer,FeaturedWrapper,ExperienceWrapper,Experience,PhraseWrapper,Phrase,ExperienceSmall} from './FeaturedElements';
 
 function FeaturedSection() {
     return (
@@ -7,11 +7,12 @@ function FeaturedSection() {
             <FeaturedContainer>
                 <FeaturedWrapper>
                     <ExperienceWrapper>
-                        <Experience>+2<br/>AÑOS</Experience>
+                        <Experience>2<br/>AÑOS<br/></Experience>
+                        <ExperienceSmall>EXPERIENCIA</ExperienceSmall>
                     </ExperienceWrapper>
                     <PhraseWrapper>
                         <Phrase>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat tortor, gravida ames id urna”
+                        “Creo que el software es lo que mueve la sociedad actual mirando a un mundo conectado sin barreras" 
                         </Phrase>
                     </PhraseWrapper>
                 </FeaturedWrapper>

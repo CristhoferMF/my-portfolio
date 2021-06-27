@@ -4,13 +4,11 @@ import { THEME } from '../../theme'
 export const AboutMeContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 0 8px;
-    padding-top:96px;
+    padding: 48px 8px;
     overflow: hidden;
     
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding: 0 8px;
-        padding-top:96px;
+        padding: 96px 0px;
         overflow: visible;
     }
 `
@@ -23,7 +21,7 @@ export const Rectangle = styled.img`
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
         left:-480px;
-        top:-50px;
+        top:0;
     }
 `
 /* SVG  */
@@ -50,13 +48,20 @@ export const Column1 = styled.div`
 /*Column1 Starts */
 
 export const TextWrapper = styled.div`
-    margin-right: 1rem;
+    
 `
 
 export const Phrase = styled.p`
     font-size: ${THEME.font.size.base};
-    font-weight: 400;
+    line-height:1.5rem;
+    font-weight: 300;
     color: ${THEME.color.black};
+    text-align: justify;
+
+    @media screen and (min-width : ${THEME.SCREENS.md}){
+        text-align: left;
+
+    }
 `
 
 /*Column1 Ends */

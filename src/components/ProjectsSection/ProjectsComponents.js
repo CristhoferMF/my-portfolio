@@ -4,12 +4,10 @@ import {Link} from 'react-router-dom';
 
 export const ProjectsContainer = styled.div`
  
-    padding: 0px 8px;
-    padding-top:96px;
+    padding: 48px 8px;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding-left: 0;
-        padding-right: 0;
+        padding: 96px 0;
     }
 `
 
@@ -19,7 +17,7 @@ export const ProjectsWrapper = styled.div`
 `
 /** Project */
 export const ProjectWrapper = styled.div`
-    padding: 40px 0;
+    padding: 60px 0;
 `
 export const ProjectRow = styled.div`
     display: flex;
@@ -51,6 +49,7 @@ export const ProjectDescription = styled.p`
     font-weight: 300;
     margin-bottom:20px;
     margin-top:0;
+    font-size: ${THEME.font.size.base};
 `
 export const Column2 = styled.div`
     

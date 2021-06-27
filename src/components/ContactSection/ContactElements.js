@@ -3,11 +3,12 @@ import { THEME } from "../../theme";
 
 export const ContactSectionContainer = styled.div`
     overflow: hidden;
-    margin-top: 96px;
-    padding: 0 8px;
+    padding: 48px 8px;
+    padding-bottom: 96px;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding:0;
+        padding-left:0;
+        padding-right:0;
     }
 `
 

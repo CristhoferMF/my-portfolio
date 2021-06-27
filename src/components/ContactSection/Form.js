@@ -13,6 +13,7 @@ function Form() {
                 <ButtonWrapper>
                     <Button type="submit">Enviar</Button>
                 </ButtonWrapper>
+                <small style={{color:'#4c4c4c',fontWeight:300,marginTop:10}}>* Este formulario todavia no esta operativo</small>
             </FormWrapper>
         </form>
     )

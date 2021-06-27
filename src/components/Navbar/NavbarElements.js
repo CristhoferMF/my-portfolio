@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import { THEME } from "../../theme";
 
 export const Nav = styled.header`
     height:80px;
@@ -9,19 +10,25 @@ export const Nav = styled.header`
     top:0;
     z-index: 999;
     transition-duration: 0.3s;
+
     &:not([data-scroll='0']) {
         background:#fff;
         box-shadow: 0 2px 10px #ccc;
     }
+
+    @media screen and (max-width: ${THEME.SCREENS.sm}){
+        display: none;
+    }
 `
 
 export const NavWrapper = styled.nav`
-    height: 80px;
     margin: auto;
     max-width: 1100px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+   
 `
 
 export const NavMenu = styled.ul`
@@ -29,6 +36,7 @@ export const NavMenu = styled.ul`
     list-style: none;
     display: flex;
     text-align: center;
+    margin:0;
 `
 
 export const NavItem = styled.li`

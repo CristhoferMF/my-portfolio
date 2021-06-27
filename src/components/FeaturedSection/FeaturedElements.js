@@ -3,6 +3,7 @@ import {THEME} from '../../theme'
 
 export const FeaturedContainer = styled.div`
     width: 100%;
+    margin-bottom: 96px;
     background: ${THEME.color.darkGray};
 `
 export const FeaturedWrapper = styled.div`
@@ -20,10 +21,12 @@ export const FeaturedWrapper = styled.div`
 `
 export const ExperienceWrapper = styled.div`
         padding: 1rem 0 0 0;
+        text-align:center;
     
     @media screen and (min-width : ${THEME.SCREENS["md"]}){
         padding-right: 1.5rem;
         padding: 3rem 0;
+        text-align: left;
     }
 `
 
@@ -31,11 +34,10 @@ export const Experience = styled.div`
     font-weight:bold;
     color: ${THEME.color.primary};
     font-size: ${THEME.font.size.h3};
-    text-align:center;
-
-    @media screen and (min-width : ${THEME.SCREENS["md"]}){
-        text-align: left;
-    }
+    
+`
+export const ExperienceSmall = styled.small`
+    color:${THEME.color.primary};
 `
 
 export const PhraseWrapper = styled.div`

@@ -11,7 +11,7 @@ export const THEME =  {
     font: {
         default:'FuturaPT',
         size:{
-            base:'16px',
+            base:'18px',
             h3:'48px'
         }
     },

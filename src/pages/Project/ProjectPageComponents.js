@@ -44,7 +44,7 @@ export const ProjectTitle = styled.h1`
 export const ProjectSubHeading = styled.h2`
 
     margin-bottom:1rem;
-    color:${THEME.color.accent}
+    color:${THEME.color.accent};
 `
 
 export const ProjectImageWrapper = styled.div`
@@ -70,7 +70,8 @@ export const ProjectDescription = styled.p`
 
 export const GalleryTitle = styled.h3`
     font-size:24px;
-    color:${THEME.color.accent}
+    color:${THEME.color.accent};
+    margin:3rem 0;
 `
 
 
@@ -80,4 +81,19 @@ export const GalleryWrapper = styled.div`
     width: 100%;
     overflow: auto;
     padding-bottom: 96px;
+`
+export const ProjectCode = styled.a`
+    display: inline-block;
+    font-size: 24px;
+    background-color:${THEME.color._black};
+    color:#fff;
+    padding:0.5rem 1rem;
+    margin:1rem 0;
+    text-decoration:none;
+    transition-duration: 0.3s;
+
+    &:hover{
+        background-color:${THEME.color.black};
+        transform: scale(1.02);
+    }
 `

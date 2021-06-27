@@ -25,13 +25,3 @@ const projects = [
         route:'/route'}
 ]
 
-export const dataProjects = {
-    projects:{
-        show: (num) => {
-            return [...projects].slice(0,num);
-        },
-        all:() => {
-            return   [...projects]
-        }
-    }
-}

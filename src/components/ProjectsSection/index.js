@@ -2,27 +2,14 @@ import React from 'react'
 import  HeadingSection from '../HeadingSection'
 import {
 ProjectsContainer,ProjectsWrapper,ProjectWrapper,ProjectRow,Column1,
-ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,ProjectTagsWrapper,ProjectTag,LinkSeeMore,LinkSeeMoreWrapper
+ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,LinkSeeMore,LinkSeeMoreWrapper
 } from './ProjectsComponents'
 import  Button  from '../Button'
 import {Link} from 'react-router-dom'
 import { IoArrowForward } from "react-icons/io5";
+import ProjectTagsList from './ProjectTagsList'
 
-
-function ProjectTags({tags}){
-    console.log(tags)
-    return (
-            <ProjectTagsWrapper>
-                {
-                    tags.map( (tag,index) => (
-                        <ProjectTag key={index}>{tag}</ProjectTag>
-                    ))
-                }
-            </ProjectTagsWrapper>
-    )
-}
-
-function Project({title,description,imgURL,id,tags}){
+function Project({title,description,imgURL,slug,tags}){
     
     return (
         <>
@@ -31,9 +18,9 @@ function Project({title,description,imgURL,id,tags}){
                     <Column1>
                         <ProjectTitle>{title}</ProjectTitle>
                         <ProjectDescription>{description}</ProjectDescription>
-                        <ProjectTags tags={tags}/>
+                        <ProjectTagsList tags={tags}/>
                         <ButtonWrapper>
-                            <Link to={"/projects/"+id}><Button>Ver más</Button></Link>
+                            <Link to={"/projects/"+slug}><Button>Ver más</Button></Link>
                         </ButtonWrapper>
                     </Column1>
                     <Column2>
@@ -52,10 +39,10 @@ function  ProjectList({projects}){
 }
 
 
-function ProjectsSection({projects}) {
+function ProjectsSection(projects) {
     return (
         <>
-            <ProjectsContainer>
+            <ProjectsContainer id="projects">
                 <ProjectsWrapper>
                     <HeadingSection textAlign="center">Proyectos</HeadingSection>
                     <ProjectList projects={projects.show(3)}/>

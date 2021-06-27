@@ -38,3 +38,14 @@ code {
   font-family: "FuturaPT";
   letter-spacing: 0.05em;
 }
+
+html[data-scroll='0'] {
+  
+  header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+  }
+}  
+

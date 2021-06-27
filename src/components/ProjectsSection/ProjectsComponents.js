@@ -5,9 +5,11 @@ import {Link} from 'react-router-dom';
 export const ProjectsContainer = styled.div`
  
     padding: 0px 8px;
+    padding-top:96px;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 `
 

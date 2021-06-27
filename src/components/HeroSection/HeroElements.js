@@ -15,11 +15,8 @@ export const HeroContainer = styled.div`
     }
     @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
         padding: 0;
-        max-width: 900px;
+        max-width: 1100px;
         max-height: 800px;
-    }
-    @media screen and (min-width : ${THEME.SCREENS["xl"]}) {
-        max-height: 960px;
     }
     @media screen and (min-width : ${THEME.SCREENS["2xl"]}) {
         max-width: 1200px;

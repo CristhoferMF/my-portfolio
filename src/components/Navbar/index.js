@@ -1,25 +1,37 @@
 import {Nav,NavWrapper,NavMenu,NavItem,NavLink} from './NavbarElements'
+import storeScroll from './scrollFunction'
+import { useEffect } from 'react'
 
+const REACT_SCROLL_CONF = {
+    smooth:true,
+    duration:500,
+    offset:-50
+}
 const Navbar = () => {
+
+    useEffect(() => {
+        return storeScroll();
+    })
+    
     return (
         <>
-            <Nav>
+            <Nav id='header-primary'>
                 <NavWrapper>
                     <NavMenu>
                         <NavItem>
-                            <NavLink to="home">Inicio</NavLink>
+                            <NavLink to="home" {...REACT_SCROLL_CONF}>Inicio</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="aboutme">Acerca de mi</NavLink>
+                            <NavLink to="aboutme" {...REACT_SCROLL_CONF} >Acerca de mi</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="skills">Sills & Experiencia</NavLink>
+                            <NavLink to="skills" {...REACT_SCROLL_CONF} >Sills & Experiencia</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="proyects">Proyectos</NavLink>
+                            <NavLink to="projects" {...REACT_SCROLL_CONF} >Proyectos</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="contact">Contáctame</NavLink>
+                            <NavLink to="contact" {...REACT_SCROLL_CONF} >Contáctame</NavLink>
                         </NavItem>
                     </NavMenu>
                 </NavWrapper>
@@ -27,5 +39,4 @@ const Navbar = () => {
         </>
     )
 }
-
 export default Navbar

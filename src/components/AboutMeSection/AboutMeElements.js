@@ -4,11 +4,13 @@ import { THEME } from '../../theme'
 export const AboutMeContainer = styled.div`
     display: flex;
     justify-content: center;
-    padding: 96px 8px;
+    padding: 0 8px;
+    padding-top:96px;
     overflow: hidden;
     
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding: 96px 0;
+        padding: 0 8px;
+        padding-top:96px;
         overflow: visible;
     }
 `

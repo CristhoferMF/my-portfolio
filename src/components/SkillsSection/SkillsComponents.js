@@ -5,11 +5,10 @@ export const SkillsContainer = styled.div`
     
     display: flex;
     justify-content: center;
-    padding: 0 8px 96px 8px;
-    padding-bottom: 96px;
+    padding: 96px 8px 0 8px;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
-        padding: 0 0 96px 0;
+        padding: 96px 0 0 0;
 
     }
 

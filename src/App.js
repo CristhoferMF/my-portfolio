@@ -1,24 +1,20 @@
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import FeaturedSection from './components/FeaturedSection'
-import AboutMeSection from './components/AboutMeSection'
-import SkillsSection from './components/SkillsSection'
-import ProjectsSection from './components/ProjectsSection'
-import {dataSkills} from './components/SkillsSection/Data'
-import {dataProjects} from './components/ProjectsSection/Data'
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom'
-import ContactSection from './components/ContactSection'
+
+import { BrowserRouter as Router,Switch,Route, Link } from 'react-router-dom'
+import HomePage from './pages/Home'
+import ProjectPage from './pages/Project';
+
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-      <HeroSection/>
-      <FeaturedSection/>
-      <AboutMeSection/>
-      <SkillsSection {...dataSkills}/>
-      <ProjectsSection {...dataProjects}/>
-      <ContactSection/>
+      <Switch>
+        <Route path="/projects/:name" >
+          <ProjectPage/>
+        </Route>
+        <Route path="*">
+          <HomePage/>
+        </Route>
+      </Switch>
     </Router>
   );
 }

@@ -7,7 +7,7 @@ import Form from './Form';
 
 function ContactSection() {
     return (
-        <ContactSectionContainer>
+        <ContactSectionContainer id="contact">
             <ContactSectionWrapper>
                 <CircleSVG src={imgCircleSVG}/>
                 <RowContact>

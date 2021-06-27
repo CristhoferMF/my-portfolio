@@ -1,16 +1,21 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
-export const Nav = styled.div`
+export const Nav = styled.header`
     height:80px;
     position: fixed;
     left: 0;
     right: 0;
     top:0;
     z-index: 999;
+    transition-duration: 0.3s;
+    &:not([data-scroll='0']) {
+        background:#fff;
+        box-shadow: 0 2px 10px #ccc;
+    }
 `
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled.nav`
     height: 80px;
     margin: auto;
     max-width: 1100px;

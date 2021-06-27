@@ -7,7 +7,7 @@ import imgSkills from '../../images/skills_background.jpg'
 function SkillsSection({skillsGroup}) {
     return (
         <>
-            <SkillsContainer>
+            <SkillsContainer id="skills">
                 <SkillsWrapper>
                     <SkillsRow>
                         <Column1>

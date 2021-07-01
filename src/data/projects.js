@@ -7,7 +7,6 @@ import {
     imgQuiz1Thumb,
     imgQuiz2Thumb,
     imgQuiz3Thumb,
-    imgQuiz4Thumb,
     imgQuiz5Thumb
 } from '../images/projects/quiz-app'
 import {

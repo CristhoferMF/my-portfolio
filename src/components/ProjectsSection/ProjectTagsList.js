@@ -3,7 +3,7 @@ import {
     } from './ProjectsComponents'
 
 export default function ProjectTagsList({tags}){
-    console.log(tags)
+   
     return (
             <ProjectTagsWrapper>
                 {

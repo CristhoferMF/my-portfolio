@@ -67,7 +67,7 @@ const projects = [{
         thumbnail: imgQuiz5Thumb,
         caption: "Pantalla Juego"
     }],
-    tags: ['React', 'React Native', 'Firebase', 'Adobe XD']
+    tags: ['React', 'React Native', 'Realm.io','Firebase', 'Adobe XD']
 }, {
     id: 2,
     slug: 'tarinaweb-wordpress',

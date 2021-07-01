@@ -19,8 +19,11 @@ function AboutMeSection() {
                                      de la informática. Esto me llevo a estudiar <b>Desarrollo de Software</b> 💻 despues de concluir el colegio. En los dos años finales de la carrera trabajé en la  
                                      <ThemeLink href="http://fim.uni.edu.pe/"> FIM UNI</ThemeLink> y aumentó mi interes por el mundo del desarrollo web.<br/>
                                      Actualmente mi deseo es seguir creciendo junto con esta industria tan cambiante. <br/>
-                                     Si sigues bajando verás en qué tecnologias me he desempeñado.<hr/>
-                                     Como no todo se trata de computadoras, En mi tiempo libre me gusta tocar la guitarra española 🎵, leer y escribir.<br/>
+                                     Si sigues bajando verás en qué tecnologias me he desempeñado.
+                                </Phrase>
+                                <hr/>
+                                <Phrase>
+                                Como no todo se trata de computadoras, En mi tiempo libre me gusta tocar la guitarra española 🎵, leer y escribir.<br/>
                                 </Phrase>
                             </TextWrapper>
                         </Column1>

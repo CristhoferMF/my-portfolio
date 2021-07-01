@@ -15,7 +15,7 @@ function SkillsSection({skillsGroup}) {
                         </Column1>
                         <Column2>
                             <ContentWrapper>
-                                <HeadingSection>Skills & Experiencia</HeadingSection>
+                                <HeadingSection>Skills</HeadingSection>
                                 <Accordion skillsGroup={skillsGroup}/>
                             </ContentWrapper>
                         </Column2>

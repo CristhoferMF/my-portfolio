@@ -27,7 +27,15 @@ function Project() {
             <Link to="/">Regresar a la pagina principal</Link>
         </>
     }
-    
+    function renderGithubLink(){
+        if(project.codeLink){
+            return <ProjectCode href={project.codeLink} target="_blank">
+                        <AiFillGithub/> Ir al codigo
+                    </ProjectCode>
+        }
+
+        return;
+    }
     return (
         <ProjectPageContainer>
         <ScrollToTop/>
@@ -41,11 +49,9 @@ function Project() {
                 </ProjectImageWrapper>
             </ProjectHeadingRow>
             <ProjectDescription>{project.descriptionFullText}</ProjectDescription>
-            {project.codeLink && <ProjectCode href={project.codeLink} target="_blank">
-                <AiFillGithub/> Ir al codigo
-            </ProjectCode>}
-            <GalleryTitle>GALERIA:</GalleryTitle>
+            {renderGithubLink()}
             <GalleryWrapper>
+                <GalleryTitle>GALERIA:</GalleryTitle>
                 {project.images[0] && <Gallery images={project.images} enableImageSelection={false} margin={4} rowHeight={150}/>}
             </GalleryWrapper>
         </ProjectPageContainer>

@@ -20,11 +20,13 @@ function Project({title,description,imgURL,slug,tags}){
                         <ProjectDescription>{description}</ProjectDescription>
                         <ProjectTagsList tags={tags}/>
                         <ButtonWrapper>
-                            <Link to={"/projects/"+slug}><Button>Ver más</Button></Link>
+                            <Link to={"/projects/"+slug}><Button>Leer más</Button></Link>
                         </ButtonWrapper>
                     </Column1>
                     <Column2>
-                        <Image src={imgURL}/>
+                        <Link to={"/projects/"+slug}>
+                            <Image src={imgURL}/>
+                        </Link>
                     </Column2>
                 </ProjectRow>
             </ProjectWrapper>

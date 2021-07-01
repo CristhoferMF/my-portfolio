@@ -50,6 +50,9 @@ export const ProjectSubHeading = styled.h2`
 export const ProjectImageWrapper = styled.div`
     flex:1;
     
+    @media screen and (min-width: ${THEME.SCREENS.md}){
+        margin: 0 20px 20px 0;
+    }
 `
 export const ProjectImage = styled.img`
 
@@ -59,6 +62,7 @@ export const ProjectImage = styled.img`
     @media screen and (min-width: ${THEME.SCREENS.md}){
         font-size:64px;
         max-width: 100%;
+        box-shadow: 20px 20px 0 ${THEME.color.accent};
     }
 `
 

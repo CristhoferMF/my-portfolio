@@ -25,7 +25,7 @@ const Navbar = () => {
                             <NavLink to="aboutme" {...REACT_SCROLL_CONF} >Acerca de mi</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="skills" {...REACT_SCROLL_CONF} >Skills & Experiencia</NavLink>
+                            <NavLink to="skills" {...REACT_SCROLL_CONF} >Skills</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink to="projects" {...REACT_SCROLL_CONF} >Proyectos</NavLink>

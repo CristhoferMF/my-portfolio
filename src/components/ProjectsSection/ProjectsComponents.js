@@ -65,9 +65,14 @@ export const Column2 = styled.div`
         width: 480px;
         padding-right:0;
     }
+    
+    a{
+        min-width: 100%;
+    }
 `
 
 export const Image = styled.div`
+    position: relative;
     width: 100%;
     height: 300px;
 
@@ -77,10 +82,20 @@ export const Image = styled.div`
     background-repeat: no-repeat no-repeat;
     background-position:center center;
     background-size: cover;
+    background-color: #3b3f45;
+    background-blend-mode: luminosity;
+    transition: all 0.6s ease;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
         height: 350px;
     }
+
+    &:hover{
+        background-color: transparent;
+        transition: background-color .25s;
+    }
+
+
 `
 
 export const ButtonWrapper = styled.div`

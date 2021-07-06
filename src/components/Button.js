@@ -5,7 +5,7 @@ const Button = styled.button`
     background-color: ${THEME.color.accent};
     padding: 1rem 2rem;
     border:none;
-    color:${THEME.color._white};
+    color: #fff;
     cursor:pointer;
     transition-duration: 0.2s;
     

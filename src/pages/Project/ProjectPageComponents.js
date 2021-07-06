@@ -89,7 +89,7 @@ export const GalleryWrapper = styled.div`
 export const ProjectCode = styled.a`
     display: inline-block;
     font-size: 24px;
-    background-color:${THEME.color._black};
+    background-color: #000;
     color:#fff;
     padding:0.5rem 1rem;
     margin:1rem 0;
@@ -97,7 +97,7 @@ export const ProjectCode = styled.a`
     transition-duration: 0.3s;
 
     &:hover{
-        background-color:${THEME.color.black};
+        background-color: #000 ;
         transform: scale(1.02);
     }
 `

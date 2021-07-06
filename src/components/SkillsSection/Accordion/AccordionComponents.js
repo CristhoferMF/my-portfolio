@@ -15,12 +15,11 @@ export const SkillsListHeadingWraper = styled.div`
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1px solid ${THEME.color.lightGray};
+    border-bottom: 1px solid ${THEME.color.cyanBlue};
 `
 
 export const SkillsListHeading = styled.h4`
     font-size: ${THEME.font.size.h3};
-    color: ${THEME.color.black};
     letter-spacing: 0;
     text-transform: uppercase;
     margin: 0;
@@ -60,7 +59,7 @@ export const SkillProgress = styled.div`
     position: relative;
     width: 100%;
     height: 20px;
-    background-color: ${THEME.color.lightGray};
+    background-color: ${THEME.color.cyanBlue};
 `
 
 export const SkillPaintedLine = styled.div`
@@ -76,5 +75,5 @@ export const SkillProcentage = styled.p`
     font-size: 14px;
     padding-right: 0.2rem;
     z-index: 1;
-    color : ${(props) => props.percentage === 100 ? THEME.color._white : THEME.color.black }
+    color : ${(props) => props.percentage === 100 ? '#fff' : '#000' }
 `

@@ -4,7 +4,7 @@ import {THEME} from '../../theme'
 export const FeaturedContainer = styled.div`
     width: 100%;
     margin-bottom: 96px;
-    background: ${THEME.color.darkGray};
+    background: ${THEME.color.PurpleMagenta};
 `
 export const FeaturedWrapper = styled.div`
     display: flex;
@@ -54,5 +54,5 @@ export const Phrase = styled.p`
     font-weight:500;
     font-size:24px;
     text-align: center;
-    color: ${THEME.color._white};
+    color: #fff
 `

@@ -29,6 +29,7 @@ export const CircleSVG = styled.img`
         top: 150px;
         left: -450px;
         z-index:-1;
+        filter: ${ ({theme}) => theme.isLight ? '' : 'invert(70%) brightness(15%);' };
     }
 `
 
@@ -90,7 +91,8 @@ export const FormWrapper = styled.div`
 export const FormInput = styled.input`
     padding: 20px;
     margin: 10px 0;
-    background-color: #F0F4F9;
+    background-color: ${ ({theme}) => theme.input };
+    color: ${ ({theme}) => theme.text };
     border:none;
 
     &:focus{
@@ -102,7 +104,8 @@ export const FormInput = styled.input`
 export const FormTextArea = styled.textarea`
     padding: 20px;
     margin: 10px 0;
-    background-color: #F0F4F9;
+    background-color: ${ ({theme}) => theme.input };
+    color: ${ ({theme}) => theme.text };
     border:none;
     resize: none;
 

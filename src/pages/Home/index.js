@@ -10,10 +10,10 @@ import dataProjects from '../../data/projects'
 import ContactSection from '../../components/ContactSection'
 
 
-function Home() {
+function Home({onThemeToggler}) {
     return (
         <>
-        <Navbar/>
+        <Navbar onThemeToggler={onThemeToggler}/>
         <HeroSection/>
         <FeaturedSection/>
         <AboutMeSection/>

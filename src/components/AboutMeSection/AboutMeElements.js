@@ -18,6 +18,7 @@ export const Rectangle = styled.img`
     left:-570px;
     top:-10px;
     z-index: -1;
+    filter: ${ ({theme}) => theme.isLight ? '' : 'invert(70%) brightness(20%);' };
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
         left:-480px;
@@ -55,7 +56,6 @@ export const Phrase = styled.p`
     font-size: ${THEME.font.size.base};
     line-height:1.5rem;
     font-weight: 300;
-    color: ${THEME.color.black};
     text-align: justify;
 
     @media screen and (min-width : ${THEME.SCREENS.md}){
@@ -84,7 +84,8 @@ export const Image = styled.img`
     width: 90%;
     box-shadow: 20px 20px 0px ${THEME.color.accent};
     margin-bottom:60px;
-
+    filter: ${ ({theme})  => theme.isLight ? '' : 'brightness(90%);' };
+    
     @media screen and (min-width : ${THEME.SCREENS["md"]}){
         margin-bottom:0px;
     }

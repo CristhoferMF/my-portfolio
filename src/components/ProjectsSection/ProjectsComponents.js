@@ -37,7 +37,6 @@ export const Column1 = styled.div`
 
 export const ProjectTitle = styled.h4`
     font-size: 48px;
-    color: ${THEME.color.black};
     margin-top: 48px;
     margin-bottom: 20px;
 
@@ -75,7 +74,6 @@ export const Image = styled.div`
     position: relative;
     width: 100%;
     height: 300px;
-
     box-shadow: 20px 20px 0 ${THEME.color.accent};
     overflow: hidden;
     background-image: url(${(props) => props.src});
@@ -83,7 +81,7 @@ export const Image = styled.div`
     background-position:center center;
     background-size: cover;
     background-color: #3b3f45;
-    background-blend-mode: luminosity;
+    filter: ${({theme}) => theme.isLight ? '' : 'brightness(90%)'};
     transition: all 0.6s ease;
 
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
@@ -107,13 +105,14 @@ export const ProjectTagsWrapper = styled.div`
 `
 
 export const ProjectTag = styled.div`
-    background-color: ${THEME.color.lightGray};
+    background-color: ${props => props.theme.term};
     display: inline-block;
     padding: 0.5rem 0.7rem;
     margin-right: 1rem;
     margin-bottom:10px;
     font-weight: 300;
     border-radius: 20px;
+    color: ${props => props.theme.color};
 `
 
 export const LinkSeeMoreWrapper = styled.div`

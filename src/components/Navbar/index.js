@@ -1,13 +1,16 @@
-import {Nav,NavWrapper,NavMenu,NavItem,NavLink} from './NavbarElements'
+import {Header,NavWrapper,NavMenu,NavItem,NavLink,NavWidgetRight} from './NavbarElements'
 import storeScroll from './scrollFunction'
-import { useEffect } from 'react'
-
+import DarkModeToggle from "react-dark-mode-toggle";
+import { useEffect,useContext,useState } from 'react'
+import { ThemeContext } from 'styled-components';
 const REACT_SCROLL_CONF = {
     smooth:true,
     duration:500,
     offset:-50
 }
-const Navbar = () => {
+const Navbar = ({onThemeToggler}) => {
+
+    const themeContext = useContext(ThemeContext);
 
     useEffect(() => {
         return storeScroll();
@@ -15,7 +18,14 @@ const Navbar = () => {
     
     return (
         <>
-            <Nav id='header-primary'>
+            <Header id='header-primary'>
+                <NavWidgetRight>
+                    <DarkModeToggle
+                        onChange={onThemeToggler}
+                        checked={!themeContext.isLight}
+                        size={50}
+                    />
+                </NavWidgetRight>
                 <NavWrapper>
                     <NavMenu>
                         <NavItem>
@@ -35,7 +45,7 @@ const Navbar = () => {
                         </NavItem>
                     </NavMenu>
                 </NavWrapper>
-            </Nav>
+            </Header>
         </>
     )
 }

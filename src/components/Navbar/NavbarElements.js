@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { THEME } from "../../theme";
 
-export const Nav = styled.header`
+export const Header = styled.header`
     height:80px;
     position: fixed;
     left: 0;
@@ -12,13 +12,14 @@ export const Nav = styled.header`
     transition-duration: 0.3s;
 
     &:not([data-scroll='0']) {
-        background:#fff;
-        box-shadow: 0 2px 10px #ccc;
+        background:${ props => props.theme.body};
+        box-shadow: 0 2px 10px ${ props => (props.theme.isLight) ? "#ccc" : '#2E2532' };
     }
 
     @media screen and (max-width: ${THEME.SCREENS.sm}){
-        display: none;
+        position: absolute;
     }
+
 `
 
 export const NavWrapper = styled.nav`
@@ -27,10 +28,19 @@ export const NavWrapper = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
+    @media screen and (max-width: ${THEME.SCREENS.sm}){
+        display: none;
+    }
    
 `
-
+export const NavWidgetRight = styled.div`
+    height: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 15px;
+`
 export const NavMenu = styled.ul`
     height: 80px;
     list-style: none;
@@ -54,7 +64,6 @@ export const NavLink = styled(LinkS)`
     cursor:pointer;
 
     &:hover{
-        border-bottom:3px solid #33C176;
-
+        border-bottom:3px solid ${THEME.color.primary};
     }
 `

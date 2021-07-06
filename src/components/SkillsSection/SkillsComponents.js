@@ -37,6 +37,7 @@ export const Image = styled.div`
     height: 100%;
     width: 100%;
     background-image: url(${ props => props.src});
+    filter: ${ ({theme})  => theme.isLight ? '' : 'brightness(90%);' };
     background-position: center;
 `
 export const Column2 = styled.div`

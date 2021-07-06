@@ -15,7 +15,7 @@ export const dataSkills = {
             name:'Backend',
             skills:[
             { name: "PHP", percentage : 90},
-            { name:'Node JS', percentage : 50},
+            { name:'Node JS', percentage : 70},
             { name:'Laravel', percentage : 60},
         ],
             isVisible:false
@@ -24,9 +24,9 @@ export const dataSkills = {
             name:'Bases de datos',
             skills:[
             { name: "Mysql", percentage : 90},
-            { name:'Mongoose', percentage : 60},
+            { name:'Mongodb', percentage : 70},
             { name:'Firebase Database', percentage : 70},
-            { name:'SQL Server', percentage : 40},
+            { name:'SQL Server', percentage : 50},
         ],
             isVisible:false
         },

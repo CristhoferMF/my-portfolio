@@ -47,7 +47,7 @@ function ProjectsSection(projects) {
             <ProjectsContainer id="projects">
                 <ProjectsWrapper>
                     <HeadingSection textAlign="center">Proyectos</HeadingSection>
-                    <ProjectList projects={projects.show(3)}/>
+                    <ProjectList projects={projects.show(4)}/>
                     <LinkSeeMoreWrapper>
                         <LinkSeeMore to="/projects">
                             Más proyectos

@@ -22,25 +22,17 @@ import {
     imgTarina2,
     imgTarina2Thumb
 } from '../images/projects/tarinaweb/'
+
+import {
+    imgWindnb,
+    imgWindnb2,
+    imgWindnb1Thumb,
+    imgWindnb2Thumb,
+    imgWindnb1
+} from '../images/projects/winbnb'
+
 const projects = [{
     id: 1,
-    slug: 'mi-portafolio',
-    title: 'Mi portafolio',
-    codeLink:'https://github.com/CristhoferMF/my-portfolio',
-    description: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar...`,
-    imgURL: imgPortfolio,
-    images: [{
-        src: imgPortfolio1,
-        thumbnail: imgPortfolio1
-    }, {
-        src: imgPortfolio2,
-        thumbnail: imgPortfolio2Thumb
-    }],
-    descriptionFullText: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar mi continuo camino en la programación. 
-                        Además, en este proyecto quise llevar un mockup hecho en Figma a una web funcional mediante Styled Components.`,
-    tags: ['React JS', 'Styled Commponents', 'Figma']
-}, {
-    id: 3,
     slug: 'trivia-quiz-app',
     title: 'Trivia Quiz App',
     codeLink:'https://github.com/CristhoferMF/reactNativeTriviaJW',
@@ -67,8 +59,45 @@ const projects = [{
         caption: "Pantalla Juego"
     }],
     tags: ['React', 'React Native', 'Realm.io','Firebase', 'Adobe XD']
-}, {
+},
+{
     id: 2,
+    slug: 'windbnb',
+    title: 'Winbnb',
+    codeLink:'https://github.com/CristhoferMF/windnb.git',
+    previewLink:'https://windnb-cristhofermf.vercel.app/',
+    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb...`,
+    imgURL: imgWindnb,
+    images: [{
+        src: imgWindnb1,
+        thumbnail: imgWindnb1Thumb
+    }, {
+        src: imgWindnb2,
+        thumbnail: imgWindnb2Thumb
+    }],
+    descriptionFullText: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar mi continuo camino en la programación. 
+                        Además, en este proyecto quise llevar un mockup hecho en Figma a una web funcional mediante Styled Components.`,
+    tags: ['React JS', 'Styled Commponents','Wouter']
+}, {
+    id: 3,
+    slug: 'mi-portafolio',
+    title: 'Mi portafolio',
+    codeLink:'https://github.com/CristhoferMF/my-portfolio',
+    description: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar...`,
+    imgURL: imgPortfolio,
+    images: [{
+        src: imgPortfolio1,
+        thumbnail: imgPortfolio1
+    }, {
+        src: imgPortfolio2,
+        thumbnail: imgPortfolio2Thumb
+    }],
+    descriptionFullText: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar mi continuo camino en la programación. 
+                        Además, en este proyecto quise llevar un mockup hecho en Figma a una web funcional mediante Styled Components.`,
+    tags: ['React JS', 'Styled Commponents', 'Figma']
+}
+,{
+    id: 4,
     slug: 'tarinaweb-wordpress',
     title: 'TarinaWeb',
     imgURL: imgTarina,

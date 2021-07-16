@@ -75,8 +75,8 @@ const projects = [{
         src: imgWindnb2,
         thumbnail: imgWindnb2Thumb
     }],
-    descriptionFullText: `Mi portafolio hecho con REACT JS. Diseño hecho en FIGMA. Es un proyecto que quería hacer desde hace algún tiempo para poder mostrar mi continuo camino en la programación. 
-                        Además, en este proyecto quise llevar un mockup hecho en Figma a una web funcional mediante Styled Components.`,
+    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb. Como parte de mi interes en el desarrollo frontend intente participar 
+                        en desafios como este. Estos retos me permitieron poner en práctica mis conocimientos sobre maquetacion, eventos del DOM y el estado.`,
     tags: ['React JS', 'Styled Commponents','Wouter']
 }, {
     id: 3,

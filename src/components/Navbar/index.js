@@ -1,7 +1,7 @@
 import {Header,NavWrapper,NavMenu,NavItem,NavLink,NavWidgetRight} from './NavbarElements'
 import storeScroll from './scrollFunction'
 import DarkModeToggle from "react-dark-mode-toggle";
-import { useEffect,useContext,useState } from 'react'
+import { useEffect,useContext } from 'react'
 import { ThemeContext } from 'styled-components';
 const REACT_SCROLL_CONF = {
     smooth:true,

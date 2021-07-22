@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeroContainer,HeroBg,HeroContentWrapper,HeroContent,Title, Subtitle,Line} from './HeroElements'
+import {HeroContainer,HeroBg,HeroContentWrapper,HeroContent, Subtitle,Line} from './HeroElements'
 import imgBanner from '../../images/banner.png'
 import svgLine from '../../images/line.svg'
 import TitleTypingEffect from './TitleTypingEffect';

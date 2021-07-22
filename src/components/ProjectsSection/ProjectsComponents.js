@@ -83,7 +83,6 @@ export const Image = styled.div`
     background-color: #3b3f45;
     filter: ${({theme}) => theme.isLight ? '' : 'brightness(90%)'};
     transition: all 0.6s ease;
-
     @media screen and (min-width : ${THEME.SCREENS["lg"]}){
         height: 350px;
     }
@@ -113,6 +112,13 @@ export const ProjectTag = styled.div`
     font-weight: 300;
     border-radius: 20px;
     color: ${props => props.theme.color};
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+    
+    &:hover{
+        transform: scale(1.1);
+    }
 `
 
 export const LinkSeeMoreWrapper = styled.div`

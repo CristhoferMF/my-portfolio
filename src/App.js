@@ -23,7 +23,6 @@ function App() {
           </Route>
           <Route path="*">
             <HomePage onThemeToggler={themeToggler}/>
-            <button onClick={themeToggler}>Switch Color</button>
           </Route>
         </Switch>
         </Suspense>

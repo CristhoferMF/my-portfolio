@@ -4,16 +4,15 @@ import Button from '../Button'
 
 function Form() {
     return (
-        <form>
+        <form action="https://formspree.io/f/mpzbzwnk" method="POST">
             <FormWrapper>
-                <FormInput placeholder="Tu nombre"/>
-                <FormInput placeholder="Tu correo electrónico"/>
-                <FormInput placeholder="Asunto"/>
-                <FormTextArea placeholder="Mensaje"/>
+                <FormInput placeholder="Tu nombre" name="name" required/>
+                <FormInput placeholder="Tu correo electrónico" name="email" required/>
+                <FormInput placeholder="Asunto" name="asunto" required/>
+                <FormTextArea placeholder="Mensaje" name="message" required/>
                 <ButtonWrapper>
                     <Button type="submit">Enviar</Button>
                 </ButtonWrapper>
-                <small style={{color:'#4c4c4c',fontWeight:300,marginTop:10}}>* Este formulario todavia no esta operativo</small>
             </FormWrapper>
         </form>
     )

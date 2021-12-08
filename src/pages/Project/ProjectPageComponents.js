@@ -101,3 +101,7 @@ export const ProjectCode = styled.a`
         transform: scale(1.02);
     }
 `
+export const ButtonWrapper = styled.div`
+    display: flex;
+    gap: 1rem;
+`

@@ -1,5 +1,12 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { THEME } from "../../theme";
+
+export const BackLink = styled(Link)`
+    color: ${THEME.color.primary};
+    text-decoration: underline;
+    font-size: ${THEME.font.size.base};
+`
 
 export const ProjectPageContainer = styled.div`
     max-width: 900px;

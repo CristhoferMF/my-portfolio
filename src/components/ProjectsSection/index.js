@@ -1,38 +1,10 @@
 import React from 'react'
 import  HeadingSection from '../HeadingSection'
 import {
-ProjectsContainer,ProjectsWrapper,ProjectWrapper,ProjectRow,Column1,
-ProjectTitle,ProjectDescription,Column2,Image,ButtonWrapper,LinkSeeMore,LinkSeeMoreWrapper
+ProjectsContainer,ProjectsWrapper,LinkSeeMore,LinkSeeMoreWrapper
 } from './ProjectsComponents'
-import  Button  from '../Button'
-import {Link} from 'react-router-dom'
 import { IoArrowForward } from "react-icons/io5";
-import ProjectTagsList from './ProjectTagsList'
-
-function Project({title,description,imgURL,slug,tags}){
-    
-    return (
-        <>
-            <ProjectWrapper>
-                <ProjectRow>
-                    <Column1>
-                        <ProjectTitle>{title}</ProjectTitle>
-                        <ProjectDescription>{description}</ProjectDescription>
-                        <ProjectTagsList tags={tags}/>
-                        <ButtonWrapper>
-                            <Link to={"/projects/"+slug}><Button>Leer más</Button></Link>
-                        </ButtonWrapper>
-                    </Column1>
-                    <Column2>
-                        <Link to={"/projects/"+slug}>
-                            <Image src={imgURL}/>
-                        </Link>
-                    </Column2>
-                </ProjectRow>
-            </ProjectWrapper>
-        </>
-    )
-}
+import Project from './Project'
 
 function  ProjectList({projects}){
     return (
@@ -40,6 +12,16 @@ function  ProjectList({projects}){
     )
 }
 
+const SeMoreProjects = ({title = "Más proyectos"}) => {
+    return (
+    <LinkSeeMoreWrapper>
+        <LinkSeeMore to="/projects">
+            {title}
+            <IoArrowForward/>
+        </LinkSeeMore>
+    </LinkSeeMoreWrapper>
+    )
+}
 
 function ProjectsSection(projects) {
     return (
@@ -47,13 +29,9 @@ function ProjectsSection(projects) {
             <ProjectsContainer id="projects">
                 <ProjectsWrapper>
                     <HeadingSection textAlign="center">Proyectos</HeadingSection>
+                    <SeMoreProjects title="Ver todos los proyectos"/>
                     <ProjectList projects={projects.show(4)}/>
-                    <LinkSeeMoreWrapper>
-                        <LinkSeeMore to="/projects">
-                            Más proyectos
-                            <IoArrowForward/>
-                        </LinkSeeMore>
-                    </LinkSeeMoreWrapper>
+                    <SeMoreProjects/>
                 </ProjectsWrapper>
             </ProjectsContainer>
         </>

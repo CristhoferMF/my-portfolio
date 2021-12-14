@@ -7,6 +7,7 @@ import useDarkMode from './hooks/useDarkMode'
 
 const HomePage = lazy(() => import('./pages/Home'));
 const ProjectPage = lazy(() => import('./pages/Project'));
+const ProjectsPage = lazy(() => import('./pages/projects'));
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Suspense fallback={<div style={{textAlign:'center',marginTop:96}}>Loading...</div>}>
         <Switch>
+          <Route exact path="/projects" component={ProjectsPage} />
           <Route path="/projects/:name" >
             <ProjectPage/>
           </Route>

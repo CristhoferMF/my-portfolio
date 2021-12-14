@@ -9,7 +9,8 @@ export const THEME = {
         default: 'FuturaPT',
         size: {
             base: '18px',
-            h3: '48px'
+            h1: '4rem',
+            h3: '48px',
         }
     },
     SCREENS: {

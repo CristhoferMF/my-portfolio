@@ -31,6 +31,8 @@ import {
   imgWindnb1,
 } from "../images/projects/winbnb";
 
+import * as ImageUploader from "../images/projects/image-uploader";
+
 const projects = [
   {
     id: 1,
@@ -130,6 +132,24 @@ const projects = [
     ],
     tags: ["Wordpress", "Figma", "JetEngine"],
   },
+    {
+    id: 5,
+    slug: "image-uploader",
+    title: "Image uploader",
+    imgURL: ImageUploader.img,
+    previewLink: "https://image-uploader.cristhofermf.dev/",
+    codeLink: "https://github.com/CristhoferMF/image-uploader",
+    description: `Este proyecto es parte de un reto de programacion Full Stack en devchallenges.io. Una aplicación que permite subir imagenes...`,
+    descriptionFullText: `Este proyecto es parte de un reto de programacion Full Stack en devchallenges.io. 
+                        Una aplicación que permite subir imagenes con una funcionalidad de arrastrar y soltar. Pasate por la demo y mira como funciona. `,
+    images: [
+      {
+        src: ImageUploader.img1,
+        thumbnail: ImageUploader.img1Thumb,
+      }
+    ],
+    tags: ["NodeJS", "Docker", "ReactJS", "TailwindCSS"],
+  },
 ];
 
 const data = {
@@ -140,6 +160,17 @@ const data = {
     return [...projects];
   },
   findBySlug: (slug) => {
+    let dimensions = {thumbnailHeight : 0,thumbnailWidth : 0};
+
+    const newProjects = projects.map( (project) => {
+      return project.images.map( (image) =>  {
+        return {
+          ...image,
+          ...dimensions
+        }
+      });
+    })
+    console.log(newProjects)
     return projects.find((project) => project.slug === slug);
   },
 };

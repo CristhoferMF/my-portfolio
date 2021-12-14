@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import dataProjects from '../../data/projects';
 import {Link} from 'react-router-dom'
-import {ProjectTitleWrapper,ProjectTitle,ProjectCode, ButtonWrapper} from './ProjectPageComponents'
+import {ProjectTitleWrapper,ProjectTitle,ProjectCode, ButtonWrapper, BackLink} from './ProjectPageComponents'
 import {ProjectSubHeading} from './ProjectPageComponents'
 import {ProjectPageContainer} from './ProjectPageComponents'
 import {ProjectDescription} from './ProjectPageComponents'
@@ -47,12 +47,13 @@ function Project() {
 
         return;
     }
-
+    console.log(!!project.images)
     return (
         <ProjectPageContainer>
         <ScrollToTop/>
             <ProjectHeadingRow>
                 <ProjectTitleWrapper>
+                    <BackLink to="./">Ir atras</BackLink>
                     <ProjectSubHeading>PROYECTO:</ProjectSubHeading>
                     <ProjectTitle>{project.title}</ProjectTitle>
                 </ProjectTitleWrapper>
@@ -67,7 +68,7 @@ function Project() {
             </ButtonWrapper>
             <GalleryWrapper>
                 <GalleryTitle>GALERIA:</GalleryTitle>
-                {project.images[0] && <Gallery images={project.images} enableImageSelection={false} margin={4} rowHeight={150}/>}
+                {!!project.images && <Gallery images={project.images} enableImageSelection={false} margin={4} rowHeight={150}/>}
             </GalleryWrapper>
         </ProjectPageContainer>
     )

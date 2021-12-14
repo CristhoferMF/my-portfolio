@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { THEME } from "../../theme";
 import {Link} from 'react-router-dom';
 
@@ -17,7 +17,7 @@ export const ProjectsWrapper = styled.div`
 `
 /** Project */
 export const ProjectWrapper = styled.div`
-    padding: 60px 0;
+    padding: ${ props => props.paddingVertical || '60px' } 0;
 `
 export const ProjectRow = styled.div`
     display: flex;
@@ -41,7 +41,7 @@ export const ProjectTitle = styled.h4`
     margin-bottom: 20px;
 
     @media screen and (min-width : ${THEME.SCREENS["md"]}){
-        margin-top:0 ;
+        margin-top: ${ props => props.position === "top" ? "2rem" : "0" };
     }
 `
 export const ProjectDescription = styled.p`
@@ -70,16 +70,14 @@ export const Column2 = styled.div`
     }
 `
 
-export const Image = styled.div`
+export const Image = styled.img`
     position: relative;
     width: 100%;
     height: 300px;
     box-shadow: 20px 20px 0 ${THEME.color.accent};
     overflow: hidden;
-    background-image: url(${(props) => props.src});
-    background-repeat: no-repeat no-repeat;
-    background-position:center center;
-    background-size: cover;
+    object-fit: cover;
+    margin: auto 20px 20px auto;
     background-color: #3b3f45;
     filter: ${({theme}) => theme.isLight ? '' : 'brightness(90%)'};
     transition: all 0.6s ease;

@@ -65,56 +65,58 @@ export const HeroContent = styled.div`
 export const HeroContentWrapper  = styled.div`
     display: flex;
     flex-direction: column;
-      /* 1version*/
-      text-align: center;
+    align-items:center;
+    /* 1version*/
+    text-align: center;
     /** */
+    .title {
+        font-weight:bold;
+        margin:0 0;
+        font-size: 4rem;
+        max-width: 500px;
+        line-height:4rem;
+
+        @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
+            font-size: 5rem;
+            line-height:5rem;
+        }
+
+        @media screen and (min-width : ${THEME.SCREENS["2xl"]}) {
+            font-size:6rem;
+            line-height: 6rem;
+        }
+        @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
+            font-size: 7.5rem;
+            line-height: 7.5rem;
+        }
+    }
+    .subtitle {
+        font-weight:bold;
+        color:#33C176;
+        margin:0 0;
+        font-size: 3rem;
+        line-height:3rem;
+        margin-top: 20px;
+
+        @media screen and (min-width : ${THEME.SCREENS["md"]}) {
+            font-size: 3.5rem;
+            line-height:3.5rem;
+            
+        }
+        @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
+            font-size:4.5rem;
+            line-height: 4.5rem;
+            margin-top: 40px;
+
+        }
+        @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
+            font-size: 5.25rem;
+            line-height: 5.25rem;
+
+        }
+    }
 `
-export const Title = styled.h1`
-  
-    font-weight:bold;
-    margin:0 0;
-    font-size: 4rem;
-    line-height:4rem;
 
-    @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
-        font-size: 5rem;
-        line-height:5rem;
-    }
-
-    @media screen and (min-width : ${THEME.SCREENS["2xl"]}) {
-        font-size:6rem;
-        line-height: 6rem;
-    }
-    @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
-        font-size: 7.5rem;
-        line-height: 7.5rem;
-    }
-`
-export const Subtitle = styled.h2`
-    font-weight:bold;
-    color:#33C176;
-    margin:0 0;
-    font-size: 3rem;
-    line-height:3rem;
-    margin-top: 20px;
-
-    @media screen and (min-width : ${THEME.SCREENS["md"]}) {
-        font-size: 3.5rem;
-        line-height:3.5rem;
-        
-    }
-    @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
-        font-size:4.5rem;
-        line-height: 4.5rem;
-        margin-top: 40px;
-
-    }
-    @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
-        font-size: 5.25rem;
-        line-height: 5.25rem;
-
-    }
-`
 export const Line = styled.img`
     display: none;
     width: 8px;

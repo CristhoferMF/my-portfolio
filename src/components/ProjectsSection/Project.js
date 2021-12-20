@@ -6,7 +6,7 @@ import {
 } from './ProjectsComponents'
 import ProjectTagsList from './ProjectTagsList'
 
-export default function Project({ title, description, imgURL, slug, tags, imagePosition, hideButton }) {
+export default function Project({ title, description, imgURL, slug, tags, imagePosition, hideButton, titleComponent }) {
     
     const ImageLink = () => {
         return (<Link to={"/projects/" + slug}>
@@ -22,7 +22,8 @@ export default function Project({ title, description, imgURL, slug, tags, imageP
                 <ProjectRow>
                     <Column1>
                         {imagePosition === "top" && <ImageLink />}
-                        <ProjectTitle position={imagePosition}>{title}</ProjectTitle>
+                        {!!titleComponent && titleComponent(title)}
+                        {!titleComponent && <ProjectTitle position={imagePosition}>{title}</ProjectTitle>}
                         <ProjectDescription>{description}</ProjectDescription>
                         <ProjectTagsList tags={tags} />
                         <ButtonWrapper>

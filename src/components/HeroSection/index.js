@@ -1,11 +1,10 @@
 import React from 'react'
-import {HeroContainer,HeroBg,HeroContentWrapper,HeroContent, Subtitle,Line} from './HeroElements'
+import {HeroContainer,HeroBg,HeroContentWrapper,HeroContent,Line} from './HeroElements'
 import imgBanner from '../../images/banner.png'
 import svgLine from '../../images/line.svg'
-import TitleTypingEffect from './TitleTypingEffect';
-
-const HERO_TITLE =  "Hola, soy<br/>Cristhofer";
-const HERO_SUBTITLE =  "Desarollador<br/>Web";
+import Typical from 'react-typical'
+const HERO_TITLE =  "Hola, soy Cristhofer";
+const HERO_SUBTITLE =  "Desarollador Web";
 
 function HeroSection() {
 
@@ -15,8 +14,16 @@ function HeroSection() {
                 <HeroBg src={imgBanner} />
                 <HeroContent>
                     <HeroContentWrapper>
-                        <TitleTypingEffect text={HERO_TITLE} delay={0} duration={80} />
-                        <TitleTypingEffect text={HERO_SUBTITLE} component={<Subtitle/>} delay={2000} duration={100}/>
+                              <Typical
+                                    steps={[HERO_TITLE]}
+                                    className="title"
+                                    wrapper="h1"
+                                />
+                                <Typical
+                                    steps={[1500,HERO_SUBTITLE]}
+                                    className="subtitle"
+                                    wrapper="h1"
+                                />
                         <Line src={svgLine}></Line>
                     </HeroContentWrapper>
                 </HeroContent>

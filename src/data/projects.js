@@ -32,6 +32,7 @@ import {
 } from "../images/projects/winbnb";
 
 import * as ImageUploader from "../images/projects/image-uploader";
+import * as ImageMovies from '../images/projects/movies';
 
 const projects = [
   {
@@ -91,6 +92,24 @@ const projects = [
     tags: ["React JS", "Styled Commponents", "Wouter"],
   },
   {
+    id: 3,
+    slug: "movies-app",
+    title: "Movies App",
+    codeLink: "https://github.com/CristhoferMF/movies-react",
+    previewLink: "https://movies.cristhofermf.dev",
+    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un catalogo de peliculas tipo Netflix...`,
+    imgURL: ImageMovies.image,
+    images: [
+      {
+        src: ImageMovies.img1,
+        thumbnail: ImageMovies.img1Thumb,
+      }
+    ],
+    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Netflix. Como parte de mi interés en el desarrollo frontend intente participar 
+                        en desafíos como este. Estos retos me permitieron poner en práctica mis conocimientos sobre React, Hooks, Axios, Hook useReducer, Context API.`,
+    tags: ["React JS", "TailwindCSS", "MovieDatabase API", "Hook useReducer"],
+  },
+    {
     id: 3,
     slug: "mi-portafolio",
     title: "Mi portafolio",

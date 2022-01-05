@@ -72,22 +72,21 @@ export const HeroContentWrapper  = styled.div`
     .title {
         font-weight:bold;
         margin:0 0;
-        font-size: 4rem;
+        font-size: ${THEME.font.size.h1};
         max-width: 500px;
-        line-height:4rem;
 
         @media screen and (min-width : ${THEME.SCREENS["lg"]}) {
-            font-size: 5rem;
-            line-height:5rem;
+            font-size: 8rem;
+            line-height:8rem;
         }
 
         @media screen and (min-width : ${THEME.SCREENS["2xl"]}) {
-            font-size:6rem;
-            line-height: 6rem;
+            font-size:9.6rem;
+            line-height: 9.6rem;
         }
         @media screen and (min-width : ${THEME.SCREENS["4xl"]}) {
-            font-size: 7.5rem;
-            line-height: 7.5rem;
+            font-size: 12rem;
+            line-height: 12rem;
         }
     }
     .subtitle {

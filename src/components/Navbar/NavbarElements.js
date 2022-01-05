@@ -52,14 +52,14 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.6em;
 `
 export const NavLink = styled(LinkS)`
     
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
-    padding: 0.5rem 0;
-    letter-spacing: 0.05rem;
+    padding: 0.5em 0;
+    letter-spacing: 0.05em;
     border-bottom:3px solid transparent;
     cursor:pointer;
 

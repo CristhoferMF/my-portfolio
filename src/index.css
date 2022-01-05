@@ -19,3 +19,7 @@
   src: url("./fonts/FuturaPT-Demi.woff")format("woff");
   font-weight: 500;
 }
+
+html {
+  font-size: 10px;
+}

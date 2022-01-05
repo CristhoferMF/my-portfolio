@@ -38,6 +38,7 @@ export const Experience = styled.div`
 `
 export const ExperienceSmall = styled.small`
     color:${THEME.color.primary};
+    font-size: ${THEME.font.size.base};
 `
 
 export const PhraseWrapper = styled.div`

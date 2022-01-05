@@ -1,5 +1,13 @@
-import React from 'react'
-import {FeaturedContainer,FeaturedWrapper,ExperienceWrapper,Experience,PhraseWrapper,Phrase,ExperienceSmall} from './FeaturedElements';
+import React from "react";
+import {
+    FeaturedContainer,
+    FeaturedWrapper,
+    ExperienceWrapper,
+    Experience,
+    PhraseWrapper,
+    Phrase,
+    ExperienceSmall,
+} from "./FeaturedElements";
 
 function FeaturedSection() {
     return (
@@ -7,18 +15,23 @@ function FeaturedSection() {
             <FeaturedContainer>
                 <FeaturedWrapper>
                     <ExperienceWrapper>
-                        <Experience>2<br/>AÑOS<br/></Experience>
+                        <Experience>
+                            3<br />
+                            AÑOS
+                            <br />
+                        </Experience>
                         <ExperienceSmall>EXPERIENCIA</ExperienceSmall>
                     </ExperienceWrapper>
                     <PhraseWrapper>
                         <Phrase>
-                        “Creo que el software es lo que mueve la sociedad actual mirando a un mundo conectado sin barreras" 
+                            “Creo que el software es lo que mueve la sociedad
+                            actual mirando a un mundo conectado sin barreras"
                         </Phrase>
                     </PhraseWrapper>
                 </FeaturedWrapper>
             </FeaturedContainer>
         </>
-    )
+    );
 }
 
-export default FeaturedSection
+export default FeaturedSection;

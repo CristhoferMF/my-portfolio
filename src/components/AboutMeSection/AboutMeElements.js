@@ -54,13 +54,12 @@ export const TextWrapper = styled.div`
 
 export const Phrase = styled.p`
     font-size: ${THEME.font.size.base};
-    line-height:1.5rem;
+    line-height: 1.3em;
     font-weight: 300;
     text-align: justify;
 
     @media screen and (min-width : ${THEME.SCREENS.md}){
         text-align: left;
-
     }
 `
 

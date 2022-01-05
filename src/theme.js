@@ -8,9 +8,10 @@ export const THEME = {
     font: {
         default: 'FuturaPT',
         size: {
-            base: '18px',
-            h1: '4rem',
-            h3: '48px',
+            base: '1.8rem',
+            h1: '6.4rem',
+            h2: '5.2rem',
+            h3: '4.8rem',
         }
     },
     SCREENS: {

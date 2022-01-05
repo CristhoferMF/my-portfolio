@@ -3,7 +3,8 @@ import { THEME } from "../theme";
 
 const Button = styled.button`
     background-color: ${THEME.color.accent};
-    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    padding: 1.2em 2.2em;
     border:none;
     color: #fff;
     cursor:pointer;

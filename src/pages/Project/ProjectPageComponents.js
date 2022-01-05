@@ -95,10 +95,10 @@ export const GalleryWrapper = styled.div`
 `
 export const ProjectCode = styled.a`
     display: inline-block;
-    font-size: 24px;
+    font-size: 2.4rem;
     background-color: #000;
     color:#fff;
-    padding:0.5rem 1rem;
+    padding:.25em .5em;
     margin:1rem 0;
     text-decoration:none;
     transition-duration: 0.3s;
@@ -110,5 +110,5 @@ export const ProjectCode = styled.a`
 `
 export const ButtonWrapper = styled.div`
     display: flex;
-    gap: 1rem;
+    gap: 1em;
 `

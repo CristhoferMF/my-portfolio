@@ -23,7 +23,7 @@ export const SkillsListHeading = styled.h4`
     letter-spacing: 0;
     text-transform: uppercase;
     margin: 0;
-    margin: 0.7rem 0;
+    margin: 1.1rem 0;
 `
 export const SkillsListIcon = styled.div`
     font-size: 30px;
@@ -49,6 +49,7 @@ export const SkillWrapper = styled.div`
 `
 export const SkillTitle = styled.p`
     font-weight: 500;
+    font-size: 1.6rem;
     text-transform: uppercase;
 `
 

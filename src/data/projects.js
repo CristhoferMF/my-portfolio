@@ -110,7 +110,7 @@ const projects = [
     tags: ["React JS", "TailwindCSS", "MovieDatabase API", "Hook useReducer"],
   },
     {
-    id: 3,
+    id: 4,
     slug: "mi-portafolio",
     title: "Mi portafolio",
     codeLink: "https://github.com/CristhoferMF/my-portfolio",
@@ -131,7 +131,7 @@ const projects = [
     tags: ["React JS", "Styled Commponents", "Figma"],
   },
   {
-    id: 4,
+    id: 5,
     slug: "tarinaweb-wordpress",
     title: "TarinaWeb",
     imgURL: imgTarina,
@@ -152,7 +152,7 @@ const projects = [
     tags: ["Wordpress", "Figma", "JetEngine"],
   },
     {
-    id: 5,
+    id: 6,
     slug: "image-uploader",
     title: "Image uploader",
     imgURL: ImageUploader.img,

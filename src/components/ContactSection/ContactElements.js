@@ -1,3 +1,4 @@
+import { SocialIcon } from "react-social-icons";
 import styled from "styled-components";
 import { THEME } from "../../theme";
 
@@ -119,3 +120,15 @@ export const FormTextArea = styled.textarea`
 export const ButtonWrapper = styled.div`
     margin: 10px 0;
 `;
+
+export const SocialsWrapper = styled.div`
+    display: flex;
+    gap: .5em;
+    margin-top: 1.5em;
+`
+export const CustomSocialIcon = styled(SocialIcon)`
+    max-height: 40px;
+    max-width: 40px;
+    border: 1px solid ${({ theme }) => theme.text};
+    border-radius: 50%;
+` 

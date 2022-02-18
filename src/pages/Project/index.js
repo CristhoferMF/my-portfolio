@@ -56,7 +56,7 @@ function Project() {
 
     return;
   }
-  console.log(!!project.images);
+
   return (
     <ProjectPageContainer>
       <ScrollToTop />

@@ -41,7 +41,6 @@ export const CustomSocialIcon = styled(SocialIcon)`
 
 const Navbar = ({ hideMenu }) => {
   const themeContext = useContext(ThemeContext);
-
   useEffect(() => {
     return storeScroll();
   });

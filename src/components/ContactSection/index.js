@@ -21,7 +21,6 @@ import { ThemeContext } from "styled-components";
 function ContactSection(props) {
   const themeContext = useContext(ThemeContext);
 
-  console.log(themeContext);
   return (
     <ContactSectionContainer id="contact">
       <ContactSectionWrapper>

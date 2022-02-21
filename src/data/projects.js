@@ -114,7 +114,7 @@ const projects = [
   {
     id: 4,
     slug: "windbnb",
-    title: "Winbnb",
+    title: "Windbnb",
     codeLink: "https://github.com/CristhoferMF/windnb.git",
     previewLink: "https://windnb-cristhofermf.vercel.app/",
     description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb...`,

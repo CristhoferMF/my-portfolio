@@ -36,24 +36,26 @@ export const dataSkills = {
     {
       name: "Mobile",
       skills: [
-        { name: "React Native", percentage: 80 },
-        { name: "Android Studio", percentage: 60 },
+        { name: "react-native", fullName: "React Native" },
+        { name: "android-studio", fullName: "Android Studio" },
       ],
     },
     {
-      name: "UI & UIX",
+      name: "Tools",
       skills: [
-        { name: "Figma", percentage: 90 },
-        { name: "Adobe XD", percentage: 90 },
-        { name: "adobe Ilustrator", percentage: 70 },
+        { name: "docker", fullName: "Docker" },
+        { name: "github-actions", fullName: "Github Actions" },
+        { name: "figma", fullName: "Figma" },
+        { name: "adobe-xd", fullName: "Adobe XD" },
+        { name: "adobe-ilustrator", fullName: "Adobe Illustrator" },
       ],
     },
     {
       name: "OS",
       skills: [
-        { name: "Linux", percentage: 80 },
-        { name: "Ubuntu Server", percentage: 80 },
-        { name: "windows", percentage: 100 },
+        { name: "fedora", fullName: "Fedora" },
+        { name: "ubuntu", fullName: "Ubuntu" },
+        { name: "windows", fullName: "Windows" },
       ],
     },
   ],

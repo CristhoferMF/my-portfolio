@@ -32,6 +32,7 @@ function AccordionSkillsType({ skillGroup, toogle, i, idVisible }) {
             <SkillImage
               src={SVGTecnologies[skill.name]}
               title={skill.fullName}
+              loading="lazy"
               isInverted={skill.isInverted}
             />
           </SkillImageWrapper>

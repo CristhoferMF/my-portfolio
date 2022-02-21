@@ -31,7 +31,7 @@ export const SkillsListIcon = styled.div`
 
 export const SkillsList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   max-height: 0;
   row-gap: 1.5em;
   overflow: hidden;

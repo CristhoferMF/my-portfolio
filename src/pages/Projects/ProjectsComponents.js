@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 export const HeaderWrapper = styled.div`
-  padding-top: 48px;
+  padding-top: 80px;
 `;
 export const Header = styled.h1`
   font-size: ${THEME.font.size.h2};

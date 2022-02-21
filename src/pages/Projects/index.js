@@ -9,6 +9,7 @@ import {
   TitleProject,
 } from "./ProjectsComponents";
 import { useEffect } from "react";
+import Navbar from "../../components/Navbar";
 
 const projects = projectsData.all();
 
@@ -19,6 +20,7 @@ export default function Projects(props) {
 
   return (
     <>
+      <Navbar hideMenu={true} />
       <Container>
         <HeaderWrapper>
           <BackLink to="/">Ir atras</BackLink>

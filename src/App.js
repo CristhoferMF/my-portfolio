@@ -10,39 +10,33 @@ const ProjectPage = lazy(() => import("./pages/Project"));
 const ProjectsPage = lazy(() => import("./pages/Projects"));
 
 function App() {
-    const [theme, themeToggler] = useDarkMode();
-    const themeValue = {
-        ...(theme === "light" ? lightTheme : darkTheme),
-        themeToggler,
-    };
-    return (
-        <ThemeProvider theme={themeValue}>
-            <GlobalStyles />
-            <Router>
-                <Suspense
-                    fallback={
-                        <div style={{ textAlign: "center", marginTop: 96 }}>
-                            Loading...
-                        </div>
-                    }
-                >
-                    <Switch>
-                        <Route
-                            exact
-                            path="/projects"
-                            component={ProjectsPage}
-                        />
-                        <Route path="/projects/:name">
-                            <ProjectPage />
-                        </Route>
-                        <Route path="*">
-                            <HomePage onThemeToggler={themeToggler} />
-                        </Route>
-                    </Switch>
-                </Suspense>
-            </Router>
-        </ThemeProvider>
-    );
+  const [theme, themeToggler] = useDarkMode();
+  const themeValue = {
+    ...(theme === "light" ? lightTheme : darkTheme),
+    themeToggler,
+  };
+  return (
+    <ThemeProvider theme={themeValue}>
+      <GlobalStyles />
+      <Router>
+        <Suspense
+          fallback={
+            <div style={{ textAlign: "center", marginTop: 96 }}>Loading...</div>
+          }
+        >
+          <Switch>
+            <Route exact path="/projects" component={ProjectsPage} />
+            <Route path="/projects/:name">
+              <ProjectPage />
+            </Route>
+            <Route path="*">
+              <HomePage onThemeToggler={themeToggler} />
+            </Route>
+          </Switch>
+        </Suspense>
+      </Router>
+    </ThemeProvider>
+  );
 }
 
 export default App;

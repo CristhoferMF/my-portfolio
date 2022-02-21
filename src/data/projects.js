@@ -32,7 +32,7 @@ import {
 } from "../images/projects/winbnb";
 
 import * as ImageUploader from "../images/projects/image-uploader";
-import * as ImageMovies from '../images/projects/movies';
+import * as ImageMovies from "../images/projects/movies";
 
 const projects = [
   {
@@ -71,46 +71,27 @@ const projects = [
   },
   {
     id: 2,
-    slug: "windbnb",
-    title: "Winbnb",
-    codeLink: "https://github.com/CristhoferMF/windnb.git",
-    previewLink: "https://windnb-cristhofermf.vercel.app/",
-    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb...`,
-    imgURL: imgWindnb,
+    slug: "tarinaweb-wordpress",
+    title: "TarinaWeb",
+    imgURL: imgTarina,
+    previewLink: "https://tarinaweb.com",
+    description: `Este proyecto esta pensado para la creación de paginas web mediante el uso de Wordpress a empresas del sector priorizando la personalización y...`,
+    descriptionFullText: `Este proyecto esta pensado para la creación de paginas web mediante el uso de Wordpress a empresas del sector priorizando la personalización y la comunicación con el cliente. 
+                En aspectos tecnicos usé Jet Engine para los Custom Post Types, Elementor y mucho SVG. Finalmente, el despliegue en un Hosting de una empresa Nacional.`,
     images: [
       {
-        src: imgWindnb1,
-        thumbnail: imgWindnb1Thumb,
+        src: imgTarina1,
+        thumbnail: imgTarina1Thumb,
       },
       {
-        src: imgWindnb2,
-        thumbnail: imgWindnb2Thumb,
+        src: imgTarina2,
+        thumbnail: imgTarina2Thumb,
       },
     ],
-    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb. Como parte de mi interes en el desarrollo frontend intente participar 
-                        en desafios como este. Estos retos me permitieron poner en práctica mis conocimientos sobre maquetacion, eventos del DOM y el estado.`,
-    tags: ["React JS", "Styled Commponents", "Wouter"],
+    tags: ["Wordpress", "Figma", "JetEngine"],
   },
   {
     id: 3,
-    slug: "movies-app",
-    title: "Movies App",
-    codeLink: "https://github.com/CristhoferMF/movies-react",
-    previewLink: "https://movies.cristhofermf.dev",
-    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un catalogo de peliculas tipo Netflix...`,
-    imgURL: ImageMovies.image,
-    images: [
-      {
-        src: ImageMovies.img1,
-        thumbnail: ImageMovies.img1Thumb,
-      }
-    ],
-    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Netflix. Como parte de mi interés en el desarrollo frontend intente participar 
-                        en desafíos como este. Estos retos me permitieron poner en práctica mis conocimientos sobre React, Hooks, Axios, Hook useReducer, Context API.`,
-    tags: ["React JS", "TailwindCSS", "MovieDatabase API", "Hook useReducer"],
-  },
-    {
-    id: 4,
     slug: "mi-portafolio",
     title: "Mi portafolio",
     codeLink: "https://github.com/CristhoferMF/my-portfolio",
@@ -131,27 +112,47 @@ const projects = [
     tags: ["React JS", "Styled Commponents", "Figma"],
   },
   {
-    id: 5,
-    slug: "tarinaweb-wordpress",
-    title: "TarinaWeb",
-    imgURL: imgTarina,
-    previewLink: "https://tarinaweb.com",
-    description: `Este proyecto esta pensado para la creación de paginas web mediante el uso de Wordpress a empresas del sector priorizando la personalización y...`,
-    descriptionFullText: `Este proyecto esta pensado para la creación de paginas web mediante el uso de Wordpress a empresas del sector priorizando la personalización y la comunicación con el cliente. 
-                En aspectos tecnicos usé Jet Engine para los Custom Post Types, Elementor y mucho SVG. Finalmente, el despliegue en un Hosting de una empresa Nacional.`,
+    id: 4,
+    slug: "windbnb",
+    title: "Windbnb",
+    codeLink: "https://github.com/CristhoferMF/windnb.git",
+    previewLink: "https://windnb-cristhofermf.vercel.app/",
+    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb...`,
+    imgURL: imgWindnb,
     images: [
       {
-        src: imgTarina1,
-        thumbnail: imgTarina1Thumb,
+        src: imgWindnb1,
+        thumbnail: imgWindnb1Thumb,
       },
       {
-        src: imgTarina2,
-        thumbnail: imgTarina2Thumb,
+        src: imgWindnb2,
+        thumbnail: imgWindnb2Thumb,
       },
     ],
-    tags: ["Wordpress", "Figma", "JetEngine"],
+    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Airbnb. Como parte de mi interes en el desarrollo frontend intente participar 
+                        en desafios como este. Estos retos me permitieron poner en práctica mis conocimientos sobre maquetacion, eventos del DOM y el estado.`,
+    tags: ["React JS", "Styled Commponents", "Wouter"],
   },
-    {
+  {
+    id: 5,
+    slug: "movies-app",
+    title: "Movies App",
+    codeLink: "https://github.com/CristhoferMF/movies-react",
+    previewLink: "https://movies.cristhofermf.dev",
+    description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un catalogo de peliculas tipo Netflix...`,
+    imgURL: ImageMovies.image,
+    images: [
+      {
+        src: ImageMovies.img1,
+        thumbnail: ImageMovies.img1Thumb,
+      },
+    ],
+    descriptionFullText: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un buscador tipo Netflix. Como parte de mi interés en el desarrollo frontend intente participar 
+                        en desafíos como este. Estos retos me permitieron poner en práctica mis conocimientos sobre React, Hooks, Axios, Hook useReducer, Context API.`,
+    tags: ["React JS", "TailwindCSS", "MovieDatabase API", "Hook useReducer"],
+  },
+
+  {
     id: 6,
     slug: "image-uploader",
     title: "Image uploader",
@@ -165,7 +166,7 @@ const projects = [
       {
         src: ImageUploader.img1,
         thumbnail: ImageUploader.img1Thumb,
-      }
+      },
     ],
     tags: ["NodeJS", "Docker", "ReactJS", "TailwindCSS"],
   },
@@ -179,17 +180,17 @@ const data = {
     return [...projects];
   },
   findBySlug: (slug) => {
-    let dimensions = {thumbnailHeight : 0,thumbnailWidth : 0};
+    let dimensions = { thumbnailHeight: 0, thumbnailWidth: 0 };
 
-    const newProjects = projects.map( (project) => {
-      return project.images.map( (image) =>  {
+    const newProjects = projects.map((project) => {
+      return project.images.map((image) => {
         return {
           ...image,
-          ...dimensions
-        }
+          ...dimensions,
+        };
       });
-    })
-    console.log(newProjects)
+    });
+    console.log(newProjects);
     return projects.find((project) => project.slug === slug);
   },
 };

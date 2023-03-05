@@ -1,0 +1,18 @@
+{
+  "translation": {
+    "hero.title": "Hola, soy Cristhofer",
+    "hero.subtitle": "Desarrollador web",
+    "navbar.home" :"Inicio",
+    "navbar.about me" :"Acerca de mi",
+    "navbar.skills" :"Skills",
+    "navbar.projects" :"Proyectos",
+    "navbar.contact me" :"Contáctame",
+    "featured.quote":"Creo que el software es lo que mueve la sociedad actual mirando a un mundo conectado sin barreras",
+    "featured.years":"Años",
+    "featured.experience":"Experiencia",
+    "aboutme.title":"Acerca de mi",
+    "aboutme.hello my name is...":"¡Hola! Mi nombre es Cristhofer Montalvo y actualmente vivo en Perú. Desde pequeño tuve mucha curiosidad sobre el mundo de la informática. Esto me llevo a estudiar",
+    "aboutme.software development":"Desarollo de Software",
+    "aboutme.after i left the college":"despues de concluir el colegio"
+  }
+}

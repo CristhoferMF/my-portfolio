@@ -1,0 +1,18 @@
+{
+  "translation": {
+    "hero.title": "Hello, I'm Cristhofer",
+    "hero.subtitle": "Software developer",
+    "navbar.home" :"Home",
+    "navbar.about me" :"About me",
+    "navbar.skills" :"Skills",
+    "navbar.projects" :"Projects",
+    "navbar.contact me" :"Contact me",
+    "featured.quote":"I believe Software is what moves today's society looking for a new world interconnected",
+    "featured.years":"years",
+    "featured.experience":"experience",
+    "aboutme.title":"About me",
+    "aboutme.hello my name is...":"Hello! My name is Cristhofer Montalvo and actually I live in Peru. Since I was a child I had so much curiosity about technology. This take me to study",
+    "aboutme.software development":"Software Development",
+    "aboutme.after i left the college":"after I left the college"    
+  }
+}

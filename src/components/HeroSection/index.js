@@ -8,23 +8,21 @@ import {
 } from "./HeroElements";
 import imgBanner from "../../images/banner.png";
 import svgLine from "../../images/line.svg";
-import Typical from "react-typical";
-const HERO_TITLE = "Hola, soy Cristhofer";
-const HERO_SUBTITLE = "Desarollador Web";
+import EnglishTypeAnimation from "./EnglishTypeAnimation";
+import SpanishTypeAnimation from "./SpanishTypeAnimation";
+import { useTranslation } from "react-i18next";
 
 function HeroSection() {
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <HeroContainer id="home">
         <HeroBg src={imgBanner} />
         <HeroContent>
           <HeroContentWrapper>
-            <Typical steps={[HERO_TITLE]} className="title" wrapper="h1" />
-            <Typical
-              steps={[1500, HERO_SUBTITLE]}
-              className="subtitle"
-              wrapper="h1"
-            />
+            {i18n.language === "en" && <EnglishTypeAnimation />}
+            {i18n.language === "es" && <SpanishTypeAnimation />}
             <Line src={svgLine}></Line>
           </HeroContentWrapper>
         </HeroContent>

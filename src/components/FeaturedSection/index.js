@@ -8,8 +8,10 @@ import {
   Phrase,
   ExperienceSmall,
 } from "./FeaturedElements";
+import { useTranslation } from "react-i18next";
 
 function FeaturedSection() {
+  const { t } = useTranslation();
   return (
     <>
       <FeaturedContainer>
@@ -17,16 +19,15 @@ function FeaturedSection() {
           <ExperienceWrapper>
             <Experience>
               3<br />
-              AÑOS
+              {t("featured.years").toUpperCase()}
               <br />
             </Experience>
-            <ExperienceSmall>EXPERIENCIA</ExperienceSmall>
+            <ExperienceSmall>
+              {t("featured.experience").toUpperCase()}
+            </ExperienceSmall>
           </ExperienceWrapper>
           <PhraseWrapper>
-            <Phrase>
-              “Creo que el software es lo que mueve la sociedad actual mirando a
-              un mundo conectado sin barreras"
-            </Phrase>
+            <Phrase>“{t("featured.quote")}"</Phrase>
           </PhraseWrapper>
         </FeaturedWrapper>
       </FeaturedContainer>

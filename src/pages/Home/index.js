@@ -5,7 +5,6 @@ import FeaturedSection from "../../components/FeaturedSection";
 import AboutMeSection from "../../components/AboutMeSection";
 import SkillsSection from "../../components/SkillsSection";
 import ProjectsSection from "../../components/ProjectsSection";
-import { dataSkills } from "../../components/SkillsSection/Data";
 import dataProjects from "../../data/projects";
 import ContactSection from "../../components/ContactSection";
 
@@ -16,7 +15,7 @@ function Home({ onThemeToggler }) {
       <HeroSection />
       <FeaturedSection />
       <AboutMeSection />
-      <SkillsSection {...dataSkills} />
+      <SkillsSection />
       <ProjectsSection {...dataProjects} />
       <ContactSection />
     </>

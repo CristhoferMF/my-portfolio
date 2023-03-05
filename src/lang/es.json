@@ -13,6 +13,13 @@
     "aboutme.title":"Acerca de mi",
     "aboutme.hello my name is...":"¡Hola! Mi nombre es Cristhofer Montalvo y actualmente vivo en Perú. Desde pequeño tuve mucha curiosidad sobre el mundo de la informática. Esto me llevo a estudiar",
     "aboutme.software development":"Desarollo de Software",
-    "aboutme.after i left the college":"despues de concluir el colegio"
+    "aboutme.after i left the college":"despues de concluir el colegio",
+    "aboutme.the last two years...":"En los dos años finales de la carrera trabajé en la",
+    "aboutme.grew up mi interest..":"y aumentó mi interes por el mundo del desarrollo web. Actualmente mi deseo es seguir creciendo junto con esta industria tan cambiante.",
+    "aboutme.if you keep scrolling down...":"Si sigues bajando verás en qué tecnologias me he desempeñado.",
+    "aboutme.computers are not everything...":"Como no todo se trata de computadoras, En mi tiempo libre me gusta tocar la guitarra española 🎵, leer y escribir.",
+    "skills.databases":"Bases de datos",
+    "projects.title":"Proyectos",
+    "projects.view all projects":"Ver todos los proyectos"
   }
 }

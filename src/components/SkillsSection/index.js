@@ -11,8 +11,13 @@ import {
 import Accordion from "./Accordion";
 import HeadingSection from "../HeadingSection";
 import imgSkills from "../../images/skills_background.jpg";
+import useSkills from "../../hooks/useSkills";
 
-function SkillsSection({ skillsGroup }) {
+function SkillsSection() {
+  const {
+    data: { skillsGroup },
+  } = useSkills();
+
   return (
     <>
       <SkillsContainer id="skills">

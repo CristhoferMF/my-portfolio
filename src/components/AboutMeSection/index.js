@@ -28,28 +28,23 @@ function AboutMeSection() {
           <AboutMeRow>
             <Column1>
               <TextWrapper>
-                <HeadingSection>Acerca de mi</HeadingSection>
+                <HeadingSection>{t("aboutme.title")}</HeadingSection>
                 <Phrase>
                   {t("aboutme.hello my name is...")}&nbsp;
                   <b>{t("aboutme.software development")}</b>&nbsp;💻&nbsp;
                   {t("aboutme.after i left the college")}.
                 </Phrase>
                 <Phrase>
-                  En los dos años finales de la carrera trabajé en la
+                  {t("aboutme.the last two years...")}
                   <ThemeLink target="_blank" href="http://fim.uni.edu.pe/">
                     &nbsp;FIM UNI&nbsp;
                   </ThemeLink>
-                  y aumentó mi interes por el mundo del desarrollo web.
-                  Actualmente mi deseo es seguir creciendo junto con esta
-                  industria tan cambiante. <br />
-                  Si sigues bajando verás en qué tecnologias me he desempeñado.
+                  {t("aboutme.grew up mi interest..")}
+                  <br />
+                  {t("aboutme.if you keep scrolling down...")}
                 </Phrase>
                 <hr />
-                <Phrase>
-                  Como no todo se trata de computadoras, En mi tiempo libre me
-                  gusta tocar la guitarra española 🎵, leer y escribir.
-                  <br />
-                </Phrase>
+                <Phrase>{t("aboutme.computers are not everything...")}</Phrase>
               </TextWrapper>
             </Column1>
             <Column2>

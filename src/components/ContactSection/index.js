@@ -33,8 +33,8 @@ function ContactSection(props) {
               colaborar con este, llene este formulario para ponernos en
               contacto.
             </Description>
-            <Email href="mailto:cristhofermontalvofiestas@gmail.com">
-              cristhofermontalvofiestas@gmail.com
+            <Email href="mailto:cristhofermontalvo@gmail.com">
+              cristhofermontalvo@gmail.com
               <IoArrowForward />
             </Email>
             <SocialsWrapper>

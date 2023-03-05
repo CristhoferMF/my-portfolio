@@ -15,14 +15,17 @@ import { useTranslation } from "react-i18next";
 function HeroSection() {
   const { t, i18n } = useTranslation();
 
+  console.log(i18n.language);
   return (
     <>
       <HeroContainer id="home">
         <HeroBg src={imgBanner} />
         <HeroContent>
           <HeroContentWrapper>
-            {i18n.language === "en" && <EnglishTypeAnimation />}
-            {i18n.language === "es" && <SpanishTypeAnimation />}
+            {(i18n.language.startsWith("en") || !i18n.language) && (
+              <EnglishTypeAnimation />
+            )}
+            {i18n.language.startsWith("es") && <SpanishTypeAnimation />}
             <Line src={svgLine}></Line>
           </HeroContentWrapper>
         </HeroContent>

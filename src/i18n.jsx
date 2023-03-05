@@ -12,6 +12,8 @@ i18n
     resources: {
       en,
       es,
+      "es-ES": es,
+      "es-MX": es,
     },
     fallbackLng: "en",
     interpolation: {

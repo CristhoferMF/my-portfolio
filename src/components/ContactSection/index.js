@@ -17,8 +17,10 @@ import HeadingSection from "../HeadingSection";
 import Form from "./Form";
 import socials from "../../data/social";
 import { ThemeContext } from "styled-components";
+import { useTranslation } from "react-i18next";
 
 function ContactSection(props) {
+  const { t } = useTranslation();
   const themeContext = useContext(ThemeContext);
 
   return (
@@ -27,12 +29,8 @@ function ContactSection(props) {
         <CircleSVG src={imgCircleSVG} />
         <RowContact>
           <Column1>
-            <HeadingSection>Charlemos</HeadingSection>
-            <Description>
-              Si tiene un proyecto en el cuál le gustaria que trabajase o
-              colaborar con este, llene este formulario para ponernos en
-              contacto.
-            </Description>
+            <HeadingSection>{t("contact.lets talk")}</HeadingSection>
+            <Description>{t("contact.if you have a project...")}</Description>
             <Email href="mailto:cristhofermontalvo@gmail.com">
               cristhofermontalvo@gmail.com
               <IoArrowForward />

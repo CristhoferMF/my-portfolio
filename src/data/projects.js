@@ -138,7 +138,7 @@ const projects = [
     slug: "movies-app",
     title: "Movies App",
     codeLink: "https://github.com/CristhoferMF/movies-react",
-    previewLink: "https://movies.cristhofermf.dev",
+    previewLink: "https://movies-cristhofermf.vercel.app/",
     description: `Este proyecto es parte de un reto en devchallenges.io. Un clon de un catalogo de peliculas tipo Netflix...`,
     imgURL: ImageMovies.image,
     images: [

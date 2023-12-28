@@ -13,7 +13,7 @@ import SpanishTypeAnimation from "./SpanishTypeAnimation";
 import { useTranslation } from "react-i18next";
 
 function HeroSection() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   console.log(i18n.language);
   return (

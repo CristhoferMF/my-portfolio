@@ -8,8 +8,8 @@ import {
   NavWidgetLeft,
 } from "./NavbarElements";
 import storeScroll from "./scrollFunction";
-import DarkModeToggle from "react-dark-mode-toggle";
-import { useEffect, useContext } from "react";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { useEffect, useContext, Fragment } from "react";
 import styled, { ThemeContext } from "styled-components";
 import { SocialIcon } from "react-social-icons";
 import socials from "../../data/social";
@@ -30,7 +30,7 @@ const SocialIconList = styled.div`
   gap: 1em;
 `;
 
-export const CustomSocialIcon = styled(SocialIcon)`
+const CustomSocialIcon = styled(SocialIcon)`
   border-radius: 50%;
   border: 1px solid ${(props) => props.theme.text};
   max-height: 40px;
@@ -41,14 +41,14 @@ export const CustomSocialIcon = styled(SocialIcon)`
   }
 `;
 
-export const LanguageWrapper = styled("div")`
+const LanguageWrapper = styled("div")`
   display: flex;
   gap: 0.8rem;
   margin-left: 3em;
   cursor: pointer;
 `;
 
-const Navbar = ({ hideMenu }) => {
+export default function Navbar({ hideMenu = false }) {
   const { t, i18n } = useTranslation();
   const themeContext = useContext(ThemeContext);
 
@@ -57,13 +57,13 @@ const Navbar = ({ hideMenu }) => {
   });
 
   return (
-    <>
+    <Fragment>
       <Header id="header-primary">
         <NavWidgetLeft>
-          <DarkModeToggle
+          <DarkModeSwitch
             onChange={themeContext.themeToggler}
             checked={!themeContext.isLight}
-            size={50}
+            size={30}
           />
           <LanguageWrapper>
             <ReactCountryFlag
@@ -140,7 +140,6 @@ const Navbar = ({ hideMenu }) => {
           </NavWrapper>
         )}
       </Header>
-    </>
+    </Fragment>
   );
-};
-export default Navbar;
+}

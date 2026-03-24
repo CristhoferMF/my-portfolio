@@ -11,7 +11,7 @@ import ContactSection from "../../components/ContactSection";
 function Home({ onThemeToggler }) {
   return (
     <>
-      <Navbar onThemeToggler={onThemeToggler} />
+      <Navbar />
       <HeroSection />
       <FeaturedSection />
       <AboutMeSection />
